@@ -443,7 +443,6 @@ header {
     #menu-toggle:checked ~ .grey-box {
       display: block;
     }
-<<<<<<< Updated upstream
 
     .box:nth-child(1) {
       margin-bottom: 0px;
@@ -665,14 +664,4 @@ header {
 
 .designet-af-class:hover {
   cursor: pointer;
-=======
-}
-
-@media only screen and (min-width: 1200px) {
-  .menu-box {
-    width: 40%;
-  }
-
- 
->>>>>>> Stashed changes
 }

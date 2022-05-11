@@ -1,5 +1,4 @@
-document.querySelector('video').playbackRate = 0.2;
-
+document.querySelector('video').playbackRate = 1;
 const animation = document.querySelectorAll('.animation') 
 
 const observer = new IntersectionObserver(entries => {
@@ -17,6 +16,9 @@ animation.forEach(animation => {
 // Animate images
 
 const floatup = document.querySelectorAll('.floatup-one') 
+const floatup2 = document.querySelectorAll('.floatup-two')
+const floatup3 = document.querySelectorAll('.floatup-three') 
+const floatup4 = document.querySelectorAll('.floatup-four')
 
 const observer2 = new IntersectionObserver(entries => {
     entries.forEach(entry => {
@@ -31,51 +33,16 @@ floatup.forEach(floatup => {
     observer2.observe(floatup)
 })
 
-// No. 2 image
-
-const floatup2 = document.querySelectorAll('.floatup-two') 
-
-const observer3 = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-        entry.target.classList.toggle("show", entry.isIntersecting)
-    })
-}, {
-    threshold: 0.0,
-    rootMargin: "170px"
-})
-
 floatup2.forEach(floatup2 => {
     observer2.observe(floatup2)
-})
-
-const floatup3 = document.querySelectorAll('.floatup-three') 
-
-const observer4 = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-        entry.target.classList.toggle("show", entry.isIntersecting)
-    })
-}, {
-    threshold: 0.0,
-    rootMargin: "170px"
-})
+}) 
 
 floatup3.forEach(floatup3 => {
-    observer4.observe(floatup3)
-})
-
-const floatup4 = document.querySelectorAll('.floatup-four') 
-
-const observer5 = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-        entry.target.classList.toggle("show", entry.isIntersecting)
-    })
-}, {
-    threshold: 0.0,
-    rootMargin: "170px"
+    observer2.observe(floatup3)
 })
 
 floatup4.forEach(floatup4 => {
-    observer5.observe(floatup4)
+    observer2.observe(floatup4)
 })
 
 
@@ -93,17 +60,21 @@ const okay = document.querySelector('.button-primary').addEventListener('click',
 
 
 // Invert logo to make it visible in each sektion
+
+var distFromTop = document.querySelector(".om-mux").offsetTop;
+var distFromTop2 = document.querySelector(".galleri").offsetTop;
+
 window.addEventListener("scroll", function(event) {
     var scroll = this.scrollY;
-    if (scroll < 1350) {
-        console.log(scroll)
-        document.getElementById("mux-logo").style.filter = "invert(0%)";
-    } else if (scroll > 1300 && scroll < 1900) {
+    if (distFromTop < scroll && scroll < distFromTop2) {
         document.getElementById("mux-logo").style.filter = "invert(100%)";
-    } else if (scroll > 1900 && scroll < 2980) {
-        console.log(scroll)
-        document.getElementById("mux-logo").style.filter = "invert(0%)";
-    } else if (scroll > 2980) {
-        document.getElementById("mux-logo").style.filter = "invert(100%)";
-    }
- });
+    }  else if (distFromTop2 > distFromTop) {
+         document.getElementById("mux-logo").style.filter = "invert(0%)";
+      } 
+//      else if (scroll > 1900 && scroll < 2980) {
+//         console.log(scroll)
+//          document.getElementById("mux-logo").style.filter = "invert(0%)";
+//      } else if (scroll > 2980) {
+//          document.getElementById("mux-logo").style.filter = "invert(100%)";
+//      }
+  });
