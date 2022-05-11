@@ -1,4 +1,5 @@
 document.querySelector('video').playbackRate = 1;
+
 const animation = document.querySelectorAll('.animation') 
 
 const observer = new IntersectionObserver(entries => {
@@ -61,21 +62,16 @@ const okay = document.querySelector('.button-primary').addEventListener('click',
 
 // Invert logo to make it visible in each sektion
 
-var distFromTop = document.querySelector(".footer").offsetTop;
+var distFromTop = document.querySelector(".om-mux").offsetTop;
 var distFromTop2 = document.querySelector(".galleri").offsetTop;
 
-// window.addEventListener("scroll", function(event) {
-//     var scroll = this.scrollY;
-//     if (distFromTop < scroll && scroll > distFromTop2) {
-//         document.getElementById("mux-logo").style.filter = "invert(100%)";
-//     }  else if (scroll > distFromTop2) {
-//          document.getElementById("mux-logo").style.filter = "invert(0%)";
-//       } 
-//   });
-
-window.addEventListener("scroll", function() {
-    var scroll = this.scrollY;
-    if (scroll > distFromTop && distFromTop2 < scroll) {
+ window.addEventListener("scroll", function(event) {
+     var scroll = this.scrollY;
+     if (scroll < distFromTop) {
+         document.getElementById("mux-logo").style.filter = "invert(0%)";
+     } else if (scroll > distFromTop && scroll < distFromTop2) {
         document.getElementById("mux-logo").style.filter = "invert(100%)";
-    }
-})  
+     } else if (distFromTop2 < scroll) {
+        document.getElementById("mux-logo").style.filter = "invert(0%)";
+     }
+   });

@@ -195,7 +195,7 @@ header {
 
    .aftermovie {
     position: absolute;
-    top: 18%;
+    top: 100px;
     right: 5%;
     width: 40%;
     display: none;
@@ -204,6 +204,8 @@ header {
   .svg-container {
     position: absolute;
     top: 100px;
+    /* Ændre left til mere eller mindre end 20 så forsvinder texten på moblie */
+    left: 25%;
     z-index: 20;
     height: 100vh;
     width: 100vw;
@@ -211,7 +213,7 @@ header {
 
   .titleone {
     position: relative;
-    animation-name: slidedown;
+    animation-name: ;
     animation-duration: .5s;
     animation-iteration-count: 1;
     animation-fill-mode: both;
@@ -232,8 +234,6 @@ header {
   }
 
   .titletwo {
-    position: relative;
-    animation-name: slidedowntwo;
     animation-duration: .5s;
     animation-iteration-count: 1;
     animation-fill-mode: both;
@@ -260,7 +260,6 @@ header {
   .titlethree {
     position: relative;
     z-index: -10;
-    animation-name: slidedownthree;
     animation-duration: .5s;
     animation-iteration-count: 1;
     animation-fill-mode: both;
@@ -455,20 +454,24 @@ header {
       margin-bottom: 0px;
     }
 
+    .aftermovie {
+      display: block;
+    }
+
+    .svg-container {
+      left: 0%;
+    }
 }
 
 @media only screen and (min-width: 500px) {
-  .aftermovie {
-    display: block;
-  }
+
 }
 
 @media only screen and (min-width: 1200px) {
 
   .mux-streger-container{
     display: block;
-  }
-
+  }  
 }
 
 
