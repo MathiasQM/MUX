@@ -18,7 +18,7 @@ header {
 .gradient-background {
     position: relative;
     z-index: -99;
-    width: 100vw;
+    width: 120vw;
     top: 0;
     left: 0;
 }
@@ -36,7 +36,7 @@ header {
   position: absolute;
   z-index: 1000;
   top: 3%;
-  right: 7%;
+  right: 15%;
   border: 3px solid #eef0f6;
   border-radius: 10px;
   padding: 5px 6px;
@@ -148,25 +148,6 @@ header {
     z-index: 100;
   }
 
-  .button-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 10%;
-  }
-
-  .button {
-    background-color: rgb(126, 110, 110);
-    border: 0;
-    color: #fff;
-    font-size: 2rem;
-    text-align: center;
-    width: 80%;
-    font-weight: 800;
-    padding: 10px 0;
-    border-radius: 100px/100px;
-
-  }
-
   .bouncy {
     animation:bouncy 5s infinite linear;
     position:relative;
@@ -205,7 +186,7 @@ header {
     position: absolute;
     top: 100px;
     /* Ændre left til mere eller mindre end 20 så forsvinder texten på moblie */
-    left: 25%;
+    left: 0;
     z-index: 20;
     height: 100vh;
     width: 100vw;
@@ -213,7 +194,7 @@ header {
 
   .titleone {
     position: relative;
-    animation-name: ;
+    animation-name: slidedown;
     animation-duration: .5s;
     animation-iteration-count: 1;
     animation-fill-mode: both;
@@ -235,6 +216,7 @@ header {
 
   .titletwo {
     animation-duration: .5s;
+    animation-name: slidedowntwo;
     animation-iteration-count: 1;
     animation-fill-mode: both;
     animation-timing-function: linear;
@@ -261,6 +243,7 @@ header {
     position: relative;
     z-index: -10;
     animation-duration: .5s;
+    animation-name: slidedownthree;
     animation-iteration-count: 1;
     animation-fill-mode: both;
     animation-timing-function: linear;
@@ -461,6 +444,10 @@ header {
     .svg-container {
       left: 0%;
     }
+
+    .frivillig-btn {
+      right: 10%;
+    }
 }
 
 @media only screen and (min-width: 500px) {
@@ -472,6 +459,10 @@ header {
   .mux-streger-container{
     display: block;
   }  
+
+  .frivillig-btn {
+    right: 7%;
+  }
 }
 
 
