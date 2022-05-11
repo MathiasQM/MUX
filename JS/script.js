@@ -61,20 +61,21 @@ const okay = document.querySelector('.button-primary').addEventListener('click',
 
 // Invert logo to make it visible in each sektion
 
-var distFromTop = document.querySelector(".om-mux").offsetTop;
+var distFromTop = document.querySelector(".footer").offsetTop;
 var distFromTop2 = document.querySelector(".galleri").offsetTop;
 
-window.addEventListener("scroll", function(event) {
-    var scroll = this.scrollY;
-    if (distFromTop < scroll && scroll < distFromTop2) {
-        document.getElementById("mux-logo").style.filter = "invert(100%)";
-    }  else if (distFromTop2 > distFromTop) {
-         document.getElementById("mux-logo").style.filter = "invert(0%)";
-      } 
-//      else if (scroll > 1900 && scroll < 2980) {
-//         console.log(scroll)
+// window.addEventListener("scroll", function(event) {
+//     var scroll = this.scrollY;
+//     if (distFromTop < scroll && scroll > distFromTop2) {
+//         document.getElementById("mux-logo").style.filter = "invert(100%)";
+//     }  else if (scroll > distFromTop2) {
 //          document.getElementById("mux-logo").style.filter = "invert(0%)";
-//      } else if (scroll > 2980) {
-//          document.getElementById("mux-logo").style.filter = "invert(100%)";
-//      }
-  });
+//       } 
+//   });
+
+window.addEventListener("scroll", function() {
+    var scroll = this.scrollY;
+    if (scroll > distFromTop && distFromTop2 < scroll) {
+        document.getElementById("mux-logo").style.filter = "invert(100%)";
+    }
+})  

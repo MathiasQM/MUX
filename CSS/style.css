@@ -6,14 +6,19 @@ html {
     line-height: 1.3;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 header {
+  width: 100vw;
   overflow: hidden;
 }
 
 .gradient-background {
     position: relative;
     z-index: -99;
-    width: 120vw;
+    width: 100vw;
     top: 0;
     left: 0;
 }
@@ -212,6 +217,7 @@ header {
     animation-fill-mode: both;
     animation-timing-function: linear;
     overflow: hidden;
+    max-width: 100vw;
   }
 
   @keyframes slidedown {
@@ -234,7 +240,7 @@ header {
     animation-timing-function: linear;
     animation-delay: .2s;
     overflow: hidden;
-    
+    max-width: 100vw;
   }
 
   @keyframes slidedowntwo {
@@ -261,6 +267,7 @@ header {
     animation-timing-function: linear;
     animation-delay: .3s;
     overflow: hidden;
+    max-width: 100vw;
   }
 
   @keyframes slidedownthree {
@@ -664,4 +671,9 @@ header {
 
 .designet-af-class:hover {
   cursor: pointer;
+}
+
+.test {
+  width: 100%;
+  height: auto;
 }
