@@ -10,6 +10,11 @@ body {
   overflow-x: hidden;
 }
 
+:root {
+  --color: #000;
+}
+
+
 header {
   width: 100vw;
   overflow: hidden;
@@ -88,6 +93,10 @@ header {
     height: 2px;
     background-color: #ffffff;
     transition-duration: .25s;
+  }
+
+  ::before {
+    background: var(--color);
   }
 
   .menu-btn > span::before {
@@ -184,7 +193,6 @@ header {
   .svg-container {
     position: absolute;
     top: 100px;
-    /* Ændre left til mere eller mindre end 20 så forsvinder texten på moblie */
     left: 0;
     z-index: 20;
     height: 100vh;
