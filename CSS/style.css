@@ -33,12 +33,11 @@ header {
 }
 
 .frivillig-btn {
-  position: absolute;
-  z-index: 1000;
-  top: 3%;
+  position: fixed;
+  z-index: 100;
+  top: 20px;
   right: 15%;
   border: 3px solid #eef0f6;
-  border-radius: 10px;
   padding: 5px 6px;
   text-decoration: none;
   color: #eef0f6;
