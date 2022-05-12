@@ -86,7 +86,7 @@ header {
     position: absolute;
     width: 100%;
     height: 2px;
-    background-color: white;
+    background-color: #ffffff;
     transition-duration: .25s;
   }
 
@@ -424,7 +424,15 @@ header {
   }
 
 
-/* Test button */
+/* Event cards */
+
+.card {
+  border: 3px solid #000;
+}
+
+.card-img {
+  width: 100%;
+}
 
 .footer {
   display: flex;
