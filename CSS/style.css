@@ -434,13 +434,52 @@ header {
 
 /* Event cards */
 
+.event-titel {
+  margin-left: 6%;
+  font-style: italic;
+  font-size: 3rem;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.event-card {
+  width: 400px;
+}
+
 .card {
-  border: 3px solid #000;
+  width: 100vw;
 }
 
 .card-img {
-  width: 100%;
+  width: 400px;
 }
+
+.card-text {
+  background-color: rgb(147, 220, 245);
+  height: 150px;
+  margin-bottom: 20px;
+}
+
+.card-p {
+  font-size: 1.2rem;
+}
+
+.card-btn {
+  background-color: #fff;
+  padding: 12px 40px;
+  border: 25px solid #fff;
+  border-left: 20px solid rgb(147, 220, 245);
+}
+
+
+
+/* Footer styiling */
 
 .footer {
   display: flex;

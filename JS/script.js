@@ -113,6 +113,13 @@ function myFunction(x) {
            }
   }
 
+  var svgtitel = document.getElementById("event-svg") 
+  var eventtitel = document.getElementById("event-titel") 
+
+
+
+
+
     var x = window.matchMedia("(max-width: 800px)")
     myFunction(x) // Call listener function at run time
     x.addEventListener('change', myFunction) // Attach listener function on state changes
