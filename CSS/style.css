@@ -120,7 +120,7 @@ header {
     margin: 0;
     padding: 80px 0;
     list-style: none;
-    background-image: linear-gradient(to right, #F9C22E, #F15946);
+    background-image: linear-gradient(to right, #b613a0, #d41a02);
     box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
     transition-duration: .25s;
     z-index: 100;
@@ -137,6 +137,43 @@ header {
     font-weight: 600;
     text-decoration: none;
     transition-duration: .25s;
+  }
+
+  .frivillig-btn-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .frivillig-btn-burgermenu {
+    text-decoration: none;
+    color: #eef0f6;
+    border: 3px solid #eef0f6;
+    text-align: center;
+    min-width: 20%;
+    font-size: 2rem;
+    overflow: hidden;
+  }
+
+  .fill:hover {
+    color: rgb(241, 115, 18);
+    border: 1px solid rgb(241, 115, 18);
+  }
+  
+  .fill:before {
+    content: "";
+    position: absolute;
+    background: rgb(26, 26, 26);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 100%;
+    z-index: -1;
+    -webkit-transition: top 0.09s ease-in;
+  }
+  
+  .fill:hover:before {
+    top: 0;
   }
   
   .menu-item:hover {
@@ -156,11 +193,6 @@ header {
     z-index: 100;
   }
 
-  .bouncy {
-    animation:bouncy 5s infinite linear;
-    position:relative;
-  }
-
   @keyframes bouncy {
     0%{top:0em}
     40%{top:0em}
@@ -172,7 +204,7 @@ header {
   }
 
   .some-container {
-    margin: 20% 15% 0;
+    margin: 5% 15% 0;
     display: flex;
     justify-content: space-evenly;
   }
@@ -180,8 +212,13 @@ header {
   .some-img {
     width: 45px;
     height: 45px;
+    filter: invert(100%);
   }
-
+ .buergermenu-img-container {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+ }
    .aftermovie {
     position: absolute;
     top: 100px;
@@ -308,7 +345,7 @@ header {
 }
 
 .box > p {
-  margin-top: 20px;
+  margin: 20px 0;
 }
   h3 {
     text-align: center;
@@ -322,6 +359,36 @@ header {
   .underoverskrift {
     border: 6px solid black;
     padding: 5px 5px 5px 5px;
+  }
+
+  .skraa-btn {
+    color: #fff;
+    background: #0a0a0a;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    border: 0;
+    outline: 0;
+    font-size: 1.1rem;
+    padding: 12px 35px;
+    width: 200px;
+    display: inline-block;
+    transform: skew(-21deg);
+  }
+
+  .skraa-btn:hover {
+    color: #0a0a0a;
+    background: #fff;
+    border: 3px solid #0a0a0a;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    outline: 1px solid #0a0a0a;
+    font-size: 1.1rem;
+    padding: 12px 35px;
+    width: 200px;
+    display: inline-block;
+    transform: skew(-21deg);
   }
 
   /* Sektion: Galleri */
