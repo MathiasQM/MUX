@@ -423,47 +423,6 @@ header {
   #lower-img {
     margin-top: 100px;
   }
-  
-@media only screen and (min-width: 800px) {
-    .menu-box {
-      width: 60%;
-    }
-
-    #menu-toggle:checked ~ .grey-box {
-      display: block;
-    }
-
-    .box:nth-child(1) {
-      margin-bottom: 0px;
-    }
-
-    .aftermovie {
-      display: block;
-    }
-
-    .svg-container {
-      left: 0%;
-    }
-
-    .frivillig-btn {
-      right: 10%;
-    }
-}
-
-@media only screen and (min-width: 500px) {
-
-}
-
-@media only screen and (min-width: 1200px) {
-
-  .mux-streger-container{
-    display: block;
-  }  
-
-  .frivillig-btn {
-    right: 7%;
-  }
-}
 
 
 /* Test button */
@@ -670,4 +629,45 @@ header {
 .test {
   width: 100%;
   height: auto;
+}
+
+@media only screen and (min-width: 800px) {
+  .menu-box {
+    width: 60%;
+  }
+
+  #menu-toggle:checked ~ .grey-box {
+    display: block;
+  }
+
+  .box:nth-child(1) {
+    margin-bottom: 0px;
+  }
+
+  .aftermovie {
+    display: block;
+  }
+
+  .svg-container {
+    left: 0%;
+  }
+
+  .frivillig-btn {
+    right: 10%;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+.mux-streger-container{
+  display: block;
+}  
+
+.frivillig-btn {
+  right: 7%;
+}
 }
