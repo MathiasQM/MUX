@@ -631,6 +631,11 @@ header {
   height: auto;
 }
 
+@media only screen and (min-width: 500px) {
+
+}
+
+
 @media only screen and (min-width: 800px) {
   .menu-box {
     width: 60%;
@@ -655,19 +660,22 @@ header {
   .frivillig-btn {
     right: 10%;
   }
-}
 
-@media only screen and (min-width: 500px) {
-
+  .gradient-background {
+    width: 110vw;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
 
-.mux-streger-container{
-  display: block;
-}  
+  .mux-streger-container{
+   display: block;
+  }  
 
-.frivillig-btn {
-  right: 7%;
-}
+  .frivillig-btn {
+    right: 7%;
+  }
+  .gradient-background {
+    width: 100vw;
+  }
 }
