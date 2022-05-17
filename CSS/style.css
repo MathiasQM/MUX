@@ -566,6 +566,61 @@ header {
   outline: 1px solid #0a0a0a;
 }
 
+/* Smarbejdspartnere */
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 10));
+  }
+}
+.slider {
+  background: rgb(43, 43, 43);
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 100vw;
+}
+.slider::before, .slider::after {
+  background: linear-gradient(to right, rgb(33, 33, 33) 0%, rgba(255, 255, 255, 0) 100%);
+  content: "";
+  height: 100px;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+}
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+.slider::before {
+  left: 0;
+  top: 0;
+}
+.slider .slide-track {
+  animation: scroll 30s linear infinite;
+  display: flex;
+  justify-content: space-evenly;
+  width: calc(200px * 14);
+}
+.slider .slide {
+  height: 100px;
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide > img {
+  width: 20%;
+  height: auto;
+}
+
 
 /* Footer styiling */
 
@@ -774,7 +829,10 @@ header {
 }
 
 @media only screen and (min-width: 500px) {
-
+  .samarbejdspartnere img {
+    width: 10%;
+  }
+  
 }
 
 
@@ -820,4 +878,9 @@ header {
   .gradient-background {
     width: 100vw;
   }
+
+  .samarbejdspartnere img {
+    width: 5%;
+  }
+  
 }
