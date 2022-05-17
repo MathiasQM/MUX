@@ -1,5 +1,4 @@
 document.querySelector('video').playbackRate = 1;
-
 const animation = document.querySelectorAll('.animation') 
 
 const observer = new IntersectionObserver(entries => {
@@ -46,6 +45,18 @@ floatup4.forEach(floatup4 => {
     observer2.observe(floatup4)
 })
 
+// Event titel scroll effekt
+
+var titel1 = document.querySelector(".event-titel");
+var titel2 = document.querySelector(".event-titel-event");
+
+window.onscroll = () => {
+    var pos = window.scrollY - 1500;
+    titel1.style.right = pos * 0.04 + 'px'
+    titel2.style.left = pos * 0.07 + 'px'
+}
+
+
 
 //designet af
 
@@ -60,86 +71,23 @@ const okay = document.querySelector('.button-primary').addEventListener('click',
 });
 
 
-// Invert logo to make it visible in each sektion
+// // Invert logo to make it visible in each sektion
 
-var distFromTop = document.querySelector(".om-mux").offsetTop + 100;
-var distFromTop2 = document.querySelector(".galleri").offsetTop + 450;
-var distFromTop3 = document.querySelector(".om-mux").offsetTop;
-var distFromTop4 = document.querySelector(".galleri").offsetTop;
+// var distFromTop = document.querySelector(".footer").offsetTop;
+// var distFromTop2 = document.querySelector(".galleri").offsetTop;
 
-function myFunction(x) {
-    if (x.matches) { // If media query matches
-        window.addEventListener("scroll", function(event) {
-            var scroll = this.scrollY;
-            if (scroll < distFromTop3) {
-                document.getElementById("mux-logo").style.filter = "invert(0%)";
-                document.querySelector(".frivillig-btn").style.color = "#fff";
-                document.querySelector(".frivillig-btn").style.border = "3px solid #fff";
-               //  document.querySelector("span").style.backgroundColor = "#000";
-               //  document.documentElement.style.setProperty('--color', "#000")
-       
-            } else if (scroll > distFromTop3&& scroll < distFromTop4) {
-               document.getElementById("mux-logo").style.filter = "invert(100%)";
-               document.querySelector(".frivillig-btn").style.color = "#000000";
-               document.querySelector(".frivillig-btn").style.border = "3px solid #000";
-            } else if (distFromTop4 < scroll) {
-               document.getElementById("mux-logo").style.filter = "invert(0%)";
-               document.querySelector(".frivillig-btn").style.color = "#fff";
-               document.querySelector(".frivillig-btn").style.border = "3px solid #fff";
-            }
-          });
-          
-    } else {
-        window.addEventListener("scroll", function(event) {
-            var scroll = this.scrollY;
-            if (scroll < distFromTop) {
-                document.getElementById("mux-logo").style.filter = "invert(0%)";
-                document.querySelector(".frivillig-btn").style.color = "#fff";
-                document.querySelector(".frivillig-btn").style.border = "3px solid #fff";
-               //  document.querySelector("span").style.backgroundColor = "#000";
-               //  document.documentElement.style.setProperty('--color', "#000")
-       
-            } else if (scroll > distFromTop && scroll < distFromTop2) {
-               document.getElementById("mux-logo").style.filter = "invert(100%)";
-               document.querySelector(".frivillig-btn").style.color = "#000000";
-               document.querySelector(".frivillig-btn").style.border = "3px solid #000";
-            } else if (distFromTop2 < scroll) {
-               document.getElementById("mux-logo").style.filter = "invert(0%)";
-               document.querySelector(".frivillig-btn").style.color = "#fff";
-               document.querySelector(".frivillig-btn").style.border = "3px solid #fff";
-            }
-          });
-       
-           }
-  }
+// // window.addEventListener("scroll", function(event) {
+// //     var scroll = this.scrollY;
+// //     if (distFromTop < scroll && scroll > distFromTop2) {
+// //         document.getElementById("mux-logo").style.filter = "invert(100%)";
+// //     }  else if (scroll > distFromTop2) {
+// //          document.getElementById("mux-logo").style.filter = "invert(0%)";
+// //       } 
+// //   });
 
-  var svgtitel = document.getElementById("event-svg") 
-  var eventtitel = document.getElementById("event-titel") 
-
-
-
-
-
-    var x = window.matchMedia("(max-width: 800px)")
-    myFunction(x) // Call listener function at run time
-    x.addEventListener('change', myFunction) // Attach listener function on state changes
-
-//  window.addEventListener("scroll", function(event) {
-//      var scroll = this.scrollY;
-//      if (scroll < distFromTop) {
-//          document.getElementById("mux-logo").style.filter = "invert(0%)";
-//          document.querySelector(".frivillig-btn").style.color = "#fff";
-//          document.querySelector(".frivillig-btn").style.border = "3px solid #fff";
-//         //  document.querySelector("span").style.backgroundColor = "#000";
-//         //  document.documentElement.style.setProperty('--color', "#000")
-
-//      } else if (scroll > distFromTop && scroll < distFromTop2) {
+// window.addEventListener("scroll", function() {
+//     var scroll = this.scrollY;
+//     if (scroll > distFromTop && distFromTop2 < scroll) {
 //         document.getElementById("mux-logo").style.filter = "invert(100%)";
-//         document.querySelector(".frivillig-btn").style.color = "#000000";
-//         document.querySelector(".frivillig-btn").style.border = "3px solid #000";
-//      } else if (distFromTop2 < scroll) {
-//         document.getElementById("mux-logo").style.filter = "invert(0%)";
-//         document.querySelector(".frivillig-btn").style.color = "#fff";
-//         document.querySelector(".frivillig-btn").style.border = "3px solid #fff";
-//      }
-//    });
+//     }
+// })  
