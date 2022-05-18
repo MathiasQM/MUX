@@ -96,6 +96,14 @@ header {
     transition-duration: .25s;
   }
 
+  .menu-btn > span.span.black::before{
+    background-color: #000;
+  }
+
+  .menu-btn > span.span.black::after{
+    background-color: #000;
+  }
+
   ::before {
     background: var(--color);
   }
