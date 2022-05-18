@@ -1,0 +1,636 @@
+:root {
+    --transitionDuration: 0.4s;
+  }  
+
+*,
+body,
+html {
+    font-size: 1rem;
+    font-family: 'Prompt', 'Roboto';
+    line-height: 1.3;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+:root {
+  --color: #000;
+}
+
+
+header {
+  width: 100vw;
+  overflow: hidden;
+}
+
+#mux-logo {
+    position: fixed;
+    width: 50px;
+    height: auto;
+    top: 20px;
+    left: 20px;
+    z-index: 2000;
+    filter: invert(0);
+}
+
+.frivillig-btn {
+  position: fixed;
+  z-index: 100;
+  top: 20px;
+  right: 15%;
+  border: 3px solid #fff;
+  padding: 5px 6px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+/* Burger menu */
+#menu-toggle {
+    opacity: 0;
+    display: none;
+  }
+  
+  #menu-toggle:checked + .menu-btn > span {
+    transform: rotate(45deg);
+  }
+
+  #menu-toggle:checked + .menu-btn > span::before {
+    top: 0;
+    transform: rotate(0deg);
+  }
+
+  #menu-toggle:checked + .menu-btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+  }
+
+  #menu-toggle:checked ~ .menu-box {
+    right: 0;
+    opacity: 1;
+  }
+
+  .menu-btn {
+    position: fixed;
+    top: 40px;
+    right: 20px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 101;
+    color: #fff;
+  }
+  
+  .menu-btn > span,
+  .menu-btn > span::before,
+  .menu-btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    transition-duration: .25s;
+  }
+
+  .menu-btn > span.span.black::before{
+    background-color: #000;
+  }
+
+  .menu-btn > span.span.black::after{
+    background-color: #000;
+  }
+
+  ::before {
+    background: var(--color);
+  }
+
+  .menu-btn > span::before {
+    content: '';
+    top: -8px;
+  }
+
+  .menu-btn > span::after {
+    content: '';
+    top: 8px;
+  }
+
+  .menu-box {
+    opacity: 0;
+    display: block;
+    position: fixed;
+    top: 0%;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 80px 0;
+    list-style: none;
+    background-image: linear-gradient(to right, #b613a0, #d41a02);
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+    transition-duration: .25s;
+    z-index: 100;
+  }
+
+  .menu-item {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 12px 24px;
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition-duration: .25s;
+  }
+
+  .frivillig-btn-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .frivillig-btn-burgermenu {
+    text-decoration: none;
+    color: #eef0f6;
+    border: 3px solid #eef0f6;
+    text-align: center;
+    min-width: 20%;
+    font-size: 2rem;
+    overflow: hidden;
+  }
+
+  .fill:hover {
+    color: rgb(241, 115, 18);
+    border: 3px solid rgb(241, 115, 18);
+  }
+  
+  .fill:before {
+    content: "";
+    position: absolute;
+    background: rgb(26, 26, 26);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 100%;
+    z-index: -1;
+    transition: top 0.09s ease-in;
+  }
+  
+  .fill:hover:before {
+    top: 0;
+  }
+  
+  .menu-item:hover {
+    background-color: rgb(221, 83, 48);
+  }
+  
+  .grey-box {
+    position: fixed;
+    left: 0%;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    display: none;
+    overflow: visible;
+    background-color: #262626;
+    opacity: 0.35;
+    z-index: 100;
+  }
+
+  @keyframes bouncy {
+    0%{top:0em}
+    40%{top:0em}
+    43%{top:-0.9em}
+    46%{top:0em}
+    48%{top:-0.4em}
+    50%{top:0em}
+    100%{top:0em;}
+  }
+
+  .some-container {
+    margin: 5% 15% 0;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .some-img {
+    width: 45px;
+    height: 45px;
+    filter: invert(100%);
+  }
+ .buergermenu-img-container {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+ }
+
+ .galleri-titel {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 500px;
+    color: #000000;
+    font-size: 6vw;
+    text-align: center;
+    background-image: url(../Media/Images/galleri/Spot-festival-31.jpg);
+  }
+
+
+ .animation {
+    opacity: 1;
+    transform: translateY(100px);
+    transition: 1000ms;
+  }
+
+ .animation.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+
+  .card-container {
+      position: relative;
+      top: 100px;
+      width: 100%;
+      height: 500px;
+      display: flex;
+      justify-content: center;
+      justify-content: space-around;
+      flex-wrap: wrap;
+  }
+
+  .cardone {
+    position: relative;
+    border-radius: 6px;
+    transition: transform var(--transitionDuration);
+    width: 300px !important;
+    height: 200px;
+    background-image: url(../Media/Images/galleri/Spot-festival-1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    margin:50px 25px 25px 25px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    flex: 1 0 30%
+}
+
+  .cardone > img {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  
+  .cardone:hover {
+    transform: translateY(-15px);
+  }
+  
+  .card__content {
+    background-color: white;
+    width: 200px;
+    height: 50px;
+    padding: 15px 0;
+    text-align: center;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+    transition: width var(--transitionDuration);
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    top: 100%;
+  }
+  
+  .cardone:hover .card__content {
+    width: 100%;
+    height: 50%;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  
+  .oplysninger {
+      display: none;
+      width: 25%;
+  }
+
+  .cardone:hover .oplysninger {
+    display: block;
+  }
+
+  .card__name {
+    color: #333;
+    margin-bottom: 4px;
+  }
+  
+  .card__position {
+    color: #00acc1;
+    font-size: 13px;
+  }
+
+  
+
+
+/* Footer styiling */
+
+.footer {
+    position: relative;
+    top: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    height: 300px
+}
+
+footer, img {
+  width: 10%;
+}
+
+.footer-nav a{
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+.footer-nav a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color: #b613a0;
+}
+
+
+.designet-af-class:hover{
+  color: #F15946;
+  text-decoration: underline;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap");
+
+.card {
+  background-color: #eef0f6;
+  font-family: "Source Sans Pro", sans-serif;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 0.4px 3.6px rgba(0, 0, 0, 0.004),
+    0 1px 8.5px rgba(0, 0, 0, 0.01), 0 1.9px 15.7px rgba(0, 0, 0, 0.019),
+    0 3.4px 28.2px rgba(0, 0, 0, 0.03), 0 6.3px 54.4px rgba(0, 0, 0, 0.047),
+    0 15px 137px rgba(0, 0, 0, 0.07);
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 800px;
+  height: 280px ;
+  z-index: 300;
+}
+
+.info > div > a {
+  color: #0060f6;
+  text-decoration: none;
+}
+
+.gem-popup {
+  display: none;
+}
+.top {
+  background-color: #eee;
+  border-radius: 20px;
+  margin: 16px 0;
+  width: 260px;
+}
+.text {
+  box-sizing: border-box;
+  padding: 0 20px 20px;
+  width: 100%;
+}
+.title {
+  justify-content: center;
+  text-transform: uppercase;
+  align-items: center;
+  display: flex;
+  font-size: 28px;
+  font-weight: bold;
+  margin: 10px;
+  position: relative;
+  font-family: 'Prompt';
+}
+.tooltip {
+  font-size: 16px;
+  font-weight: normal;
+  margin-top: 2px;
+  position: relative;
+}
+.tooltip:hover {
+  cursor: help;
+}
+.tooltip-spacing {
+  height: 20px;
+  margin: 8px;
+  position: relative;
+  width: 20px;
+}
+.tooltip-bg1 {
+  background-color: #0060f6;
+  border-radius: 10px;
+  content: " ";
+  display: flex;
+  height: 20px;
+  position: absolute;
+  top: 0;
+  width: 20px;
+}
+.tooltip-bg2 {
+  background-color: #fff;
+  border-radius: 8px;
+  content: " ";
+  display: flex;
+  height: 16px;
+  left: 2px;
+  position: absolute;
+  top: 2px;
+  width: 16px;
+}
+.tooltip-text {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 20px;
+  position: relative;
+  text-align: center;
+  width: 20px;
+  color: #0060f6;
+}
+.info {
+  color: #262626;
+  display: flex;
+  justify-content: space-around;
+}
+.popup-bg {
+  filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.16))
+    drop-shadow(0 3px 6px rgba(0, 0, 0, 0.23));
+  position: absolute;
+  top: -126px;
+}
+.popup-outline {
+  position: absolute;
+  top: -126px;
+}
+.popup-text {
+  border-radius: 12px;
+  box-sizing: border-box;
+  color: #fff;
+  font-size: 16px;
+  font-weight: normal;
+  left: 8px;
+  opacity: 0;
+  padding: 12px 16px;
+  position: absolute;
+  top: -117px;
+  transition: opacity 240ms 120ms cubic-bezier(0.4, 0, 0.2, 1);
+  width: 292px;
+}
+.tooltip:hover ~ .popup-text {
+  display: block;
+}
+.popup-bg {
+  opacity: 0;
+  transition: opacity 240ms 120ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.popup-outline-left {
+  stroke-dasharray: 0 426px;
+  stroke-dashoffset: 1px;
+  transition: stroke-dasharray 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.popup-outline-right {
+  stroke-dasharray: 352px 352px;
+  stroke-dashoffset: -352px;
+  transition: stroke-dashoffset 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.tooltip:hover ~ .popup-text {
+  opacity: 1;
+}
+.tooltip:hover ~ .popup-bg {
+  opacity: 1;
+  transition: opacity 240ms 120ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.tooltip:hover ~ .popup-outline .popup-outline-left {
+  stroke-dasharray: 426px 426px;
+  transition: stroke-dasharray 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.tooltip:hover ~ .popup-outline .popup-outline-right {
+  stroke-dashoffset: 0;
+  transition: stroke-dashoffset 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.buttons {
+  display: flex;
+  margin-top: 8px;
+  width: 100%;
+  justify-content: center;
+}
+.button-primary {
+  align-items: center;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  height: 50px;
+  justify-content: center;
+  margin: 10px;
+  width: 50%;
+}
+
+.button-primary {
+  background-color: #0060f6;
+  color: #fff;
+}
+
+.button-primary:hover{
+  background-color: #024bbf;
+}
+
+.designet-af-class:hover {
+  cursor: pointer;
+}
+
+.test {
+  width: 100%;
+  height: auto;
+}
+
+@media only screen and (min-width: 500px) {
+  .samarbejdspartnere img {
+    width: 10%;
+  }
+  
+}
+
+
+@media only screen and (min-width: 800px) {
+  .menu-box {
+    width: 60%;
+  }
+
+  #menu-toggle:checked ~ .grey-box {
+    display: block;
+  }
+
+  .box:nth-child(1) {
+    margin-bottom: 0px;
+  }
+
+  .aftermovie {
+    display: block;
+  }
+
+  .svg-container {
+    left: 0%;
+  }
+
+  .frivillig-btn {
+    right: 10%;
+  }
+
+  .gradient-background {
+    width: 110vw;
+  }
+
+  .event-card:nth-child(1) {
+    margin-right: 50px;
+  }
+
+  .event-titel {
+    font-size: 4rem;
+  }
+  
+  .event-titel-event {
+    font-size: 4rem;
+  }
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+  .mux-streger-container{
+   display: block;
+  }  
+
+  .frivillig-btn {
+    right: 7%;
+  }
+  .gradient-background {
+    width: 100vw;
+  }
+
+  .event-card:nth-child(2) {
+    margin-right: 50px;
+  }
+  .samarbejdspartnere img {
+    width: 5%;
+  }
+  
+}

@@ -77,17 +77,6 @@ const okay = document.querySelector('.button-primary').addEventListener('click',
  var distFromTop2 = document.querySelector(".galleri").offsetTop;
  var distFromTop3 = document.querySelector(".event-sektion").offsetTop;
 
-// window.addEventListener("scroll", function(event) {
-//      var scroll = this.scrollY;
-//      if (distFromTop < scroll && scroll > distFromTop2) {
-//          document.getElementById("mux-logo").style.filter = "invert(100%)";
-//          document.getElementById("hamburger-menu").style.backgroundColor = "black";
-//      } 
-//       else if (scroll > distFromTop2) {
-//          document.getElementById("mux-logo").style.filter = "invert(0%)";
-//        } 
-//    });
-
  window.addEventListener("scroll", function() {
      var scroll = this.scrollY;
      if (scroll > distFromTop && scroll < distFromTop2) {
