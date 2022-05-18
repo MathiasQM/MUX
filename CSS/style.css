@@ -447,8 +447,6 @@ header {
   }
 
   .img {
-    background-image: url(../Media/Images/pexels-photo-1763075-2.webp);
-    background-size: cover;
     z-index: 2;
     overflow: hidden;
     color: #fff;
@@ -457,7 +455,77 @@ header {
     border-radius: 20px;
     position: relative;
     margin: 50px;
-  }   
+  }  
+  
+  .imgone {
+    background-image: url(../Media/Images/galleri/Spot-festival-1.jpg);
+    background-size: cover;
+  }
+
+  .imgtwo {
+    background-image: url(../Media/Images/galleri/Spot-festival-2.jpg);
+    background-size: cover;
+  }
+
+  .imgthree {
+    background-image: url(../Media/Images/galleri/Spot-festival-3.jpg);
+    background-size: cover;
+  }
+
+  .imgfour {
+    background-image: url(../Media/Images/galleri/Spot-festival-4.jpg);
+    background-size: cover;
+  }
+
+  .imgfive {
+    background-image: url(../Media/Images/galleri/Spot-festival-5.jpg);
+    background-size: cover;
+  }
+
+  .imgsix {
+    background-image: url(../Media/Images/galleri/Spot-festival-6.jpg);
+    background-size: cover;
+  }
+
+  .imgseven {
+    background-image: url(../Media/Images/galleri/Spot-festival-7.jpg);
+    background-size: cover;
+  }
+
+  .imgeight {
+    background-image: url(../Media/Images/galleri/Spot-festival-8.jpg);
+    background-size: cover;
+  }
+
+  .imgnine {
+    background-image: url(../Media/Images/galleri/Spot-festival-9.jpg);
+    background-size: cover;
+  }
+
+  .imgten {
+    background-image: url(../Media/Images/galleri/Spot-festival-10.jpg);
+    background-size: cover;
+  }
+
+  .imgeleven {
+    background-image: url(../Media/Images/galleri/Spot-festival-11.jpg);
+    background-size: cover;
+  }
+
+  .imgtvelve {
+    background-image: url(../Media/Images/galleri/Spot-festival-12.jpg);
+    background-size: cover;
+  }
+
+  .imgthirteen {
+    background-image: url(../Media/Images/galleri/Spot-festival-13.jpg);
+    background-size: cover;
+  }
+
+  .imgfourteen{
+    background-image: url(../Media/Images/galleri/Spot-festival-14.jpg);
+    background-size: cover;
+  }
 
   .floatup-one {
     opacity: 0;

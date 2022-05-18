@@ -281,8 +281,6 @@ body {
   }
 
   .img {
-    background-image: url(https://photos.app.goo.gl/K2vUkHJbpZbcdg5r9);
-    background-size: cover;
     z-index: 2;
     overflow: hidden;
     color: #fff;
@@ -291,7 +289,292 @@ body {
     border-radius: 20px;
     position: relative;
     margin: 50px;
-  }   
+  }  
+  
+  .imgone {
+    background-image: url(../Media/Images/galleri/Spot-festival-1.jpg);
+    background-size: cover;
+  }
+
+  .imgtwo {
+    background-image: url(../Media/Images/galleri/Spot-festival-2.jpg);
+    background-size: cover;
+  }
+
+  .imgthree {
+    background-image: url(../Media/Images/galleri/Spot-festival-3.jpg);
+    background-size: cover;
+  }
+
+  .imgfour {
+    background-image: url(../Media/Images/galleri/Spot-festival-4.jpg);
+    background-size: cover;
+  }
+
+  .imgfive {
+    background-image: url(../Media/Images/galleri/Spot-festival-5.jpg);
+    background-size: cover;
+  }
+
+  .imgsix {
+    background-image: url(../Media/Images/galleri/Spot-festival-6.jpg);
+    background-size: cover;
+  }
+
+  .imgseven {
+    background-image: url(../Media/Images/galleri/Spot-festival-7.jpg);
+    background-size: cover;
+  }
+
+  .imgeight {
+    background-image: url(../Media/Images/galleri/Spot-festival-8.jpg);
+    background-size: cover;
+  }
+
+  .imgnine {
+    background-image: url(../Media/Images/galleri/Spot-festival-9.jpg);
+    background-size: cover;
+  }
+
+  .imgten {
+    background-image: url(../Media/Images/galleri/Spot-festival-10.jpg);
+    background-size: cover;
+  }
+
+  .imgeleven {
+    background-image: url(../Media/Images/galleri/Spot-festival-11.jpg);
+    background-size: cover;
+  }
+
+  .imgtvelve {
+    background-image: url(../Media/Images/galleri/Spot-festival-12.jpg);
+    background-size: cover;
+  }
+
+  .imgthirteen {
+    background-image: url(../Media/Images/galleri/Spot-festival-13.jpg);
+    background-size: cover;
+  }
+
+  .imgfourteen{
+    background-image: url(../Media/Images/galleri/Spot-festival-14.jpg);
+    background-size: cover;
+  }
+
+  .imgfifteen {
+    background-image: url(../Media/Images/galleri/Spot-festival-15.jpg);
+    background-size: cover;
+  }
+
+  .imgsixteen {
+    background-image: url(../Media/Images/galleri/Spot-festival-16.jpg);
+    background-size: cover;
+  }
+
+  .imgseventeen {
+    background-image: url(../Media/Images/galleri/Spot-festival-17.jpg);
+    background-size: cover;
+  }
+
+  .imgeightteen {
+    background-image: url(../Media/Images/galleri/Spot-festival-18.jpg);
+    background-size: cover;
+  }
+
+  .imgnineteen {
+    background-image: url(../Media/Images/galleri/Spot-festival-19.jpg);
+    background-size: cover;
+  }
+
+  .imgtwenty {
+    background-image: url(../Media/Images/galleri/Spot-festival-20.jpg);
+    background-size: cover;
+  }
+
+  .imgtwoone {
+    background-image: url(../Media/Images/galleri/Spot-festival-21.jpg);
+    background-size: cover;
+  }
+
+  .imgtwotwo {
+    background-image: url(../Media/Images/galleri/Spot-festival-22.jpg);
+    background-size: cover;
+  }
+
+  .imgtwothree {
+    background-image: url(../Media/Images/galleri/Spot-festival-23.jpg);
+    background-size: cover;
+  }
+
+  .imgtwofour {
+    background-image: url(../Media/Images/galleri/Spot-festival-24.jpg);
+    background-size: cover;
+  }
+
+  .imgtwofive {
+    background-image: url(../Media/Images/galleri/Spot-festival-25.jpg);
+    background-size: cover;
+  }
+
+  .imgtwosix {
+    background-image: url(../Media/Images/galleri/Spot-festival-26.jpg);
+    background-size: cover;
+  }
+
+  .imgtwoseven {
+    background-image: url(../Media/Images/galleri/Spot-festival-27.jpg);
+    background-size: cover;
+  }
+
+  .imgtwoeight {
+    background-image: url(../Media/Images/galleri/Spot-festival-28.jpg);
+    background-size: cover;
+  }
+
+  .imgtwonine {
+    background-image: url(../Media/Images/galleri/Spot-festival-29.jpg);
+    background-size: cover;
+  }
+
+  .imgthreezero {
+    background-image: url(../Media/Images/galleri/Spot-festival-30.jpg);
+    background-size: cover;
+  }
+
+  .imgthreeone {
+    background-image: url(../Media/Images/galleri/Spot-festival-31.jpg);
+    background-size: cover;
+  }
+
+  .imgthreetwo {
+    background-image: url(../Media/Images/galleri/Spot-festival-32.jpg);
+    background-size: cover;
+  }
+
+  .imgthreethree {
+    background-image: url(../Media/Images/galleri/Spot-festival-33.jpg);
+    background-size: cover;
+  }
+
+  .imgthreefour {
+    background-image: url(../Media/Images/galleri/Spot-festival-34.jpg);
+    background-size: cover;
+  }
+
+  .imgthreefive {
+    background-image: url(../Media/Images/galleri/Spot-festival-35.jpg);
+    background-size: cover;
+  }
+
+  .imgthreesix {
+    background-image: url(../Media/Images/galleri/Spot-festival-36.jpg);
+    background-size: cover;
+  }
+
+  .imgthreeseven {
+    background-image: url(../Media/Images/galleri/Spot-festival-37.jpg);
+    background-size: cover;
+  }
+
+  .imgthreenine {
+    background-image: url(../Media/Images/galleri/Spot-festival-38.jpg);
+    background-size: cover;
+  }
+
+  .imgfourty {
+    background-image: url(../Media/Images/galleri/Spot-festival-39.jpg);
+    background-size: cover;
+  }
+
+  .imgfourone {
+    background-image: url(../Media/Images/galleri/Spot-festival-40.jpg);
+    background-size: cover;
+  }
+
+  .imgfourtwo {
+    background-image: url(../Media/Images/galleri/Spot-festival-41.jpg);
+    background-size: cover;
+  }
+
+  .imgfourthree {
+    background-image: url(../Media/Images/galleri/Spot-festival-42.jpg);
+    background-size: cover;
+  }
+
+  .imgfourfour {
+    background-image: url(../Media/Images/galleri/Spot-festival-43.jpg);
+    background-size: cover;
+  }
+
+  .imgfourfive {
+    background-image: url(../Media/Images/galleri/Spot-festival-44.jpg);
+    background-size: cover;
+  }
+
+  .imgfoursix {
+    background-image: url(../Media/Images/galleri/Spot-festival-45.jpg);
+    background-size: cover;
+  }
+
+  .imgfourseven {
+    background-image: url(../Media/Images/galleri/Spot-festival-46.jpg);
+    background-size: cover;
+  }
+
+  .imgfoureight {
+    background-image: url(../Media/Images/galleri/Spot-festival-47.jpg);
+    background-size: cover;
+  }
+
+  .imgfournine {
+    background-image: url(../Media/Images/galleri/Spot-festival-48.jpg);
+    background-size: cover;
+  }
+
+  .imgfifty {
+    background-image: url(../Media/Images/galleri/Spot-festival-49.jpg);
+    background-size: cover;
+  }
+
+  .imgfiveone {
+    background-image: url(../Media/Images/galleri/Spot-festival-50.jpg);
+    background-size: cover;
+  }
+
+  .imgfivetwo {
+    background-image: url(../Media/Images/galleri/Spot-festival-51.jpg);
+    background-size: cover;
+  }
+
+  .imgfivethree {
+    background-image: url(../Media/Images/galleri/Spot-festival-52.jpg);
+    background-size: cover;
+  }
+
+  .imgfivefour {
+    background-image: url(../Media/Images/galleri/Spot-festival-53.jpg);
+    background-size: cover;
+  }
+
+  .imgfivefive {
+    background-image: url(../Media/Images/galleri/Spot-festival-54.jpg);
+    background-size: cover;
+  }
+
+  .imgfivesix {
+    background-image: url(../Media/Images/galleri/Spot-festival-55.jpg);
+    background-size: cover;
+  }
+
+  .imgfiveseven {
+    background-image: url(../Media/Images/galleri/Spot-festival-56.jpg);
+    background-size: cover;
+  }
+
+  .imgfiveeight {
+    background-image: url(../Media/Images/galleri/Spot-festival-57.jpg);
+    background-size: cover;
+  }
 
   .floatup-one {
     opacity: 0;
