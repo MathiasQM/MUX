@@ -31,3 +31,17 @@ window.addEventListener("scroll", function() {
         document.querySelector(".span").style.backgroundColor = "white";
     }
 })  
+
+const copy = document.querySelector(".copy");
+
+copy.onclick = function() {
+  document.execCommand("copy");
+}
+
+copy.addEventListener("copy", function(event) {
+  event.preventDefault();
+  if (event.clipboardData) {
+    event.clipboardData.setData("text/plain", copy.textContent);
+    console.log(event.clipboardData.getData("text"))
+  }
+});
