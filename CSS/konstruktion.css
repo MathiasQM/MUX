@@ -1,0 +1,25 @@
+
+#body {
+    background: url(../Media/Videos/Gradient-background.mp4);
+}
+
+button {
+    padding: 20px 40px;
+    font-size: 2rem;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.kontruktion-container {
+    display: flex;
+    justify-content: center;
+}
+
