@@ -628,12 +628,20 @@ header {
   min-width: 400px;
   max-width: 400px;
   color: #fff;
-  background-image: url(../Media/Images/Eventtest.jpg);
+  background-image: url(../Media/Images/SpotXMux.jpg);
   background-size: contain;
   background-repeat: no-repeat;
   padding: 12.5rem 0 0;
   overflow: hidden;
   margin-top: 50px;
+}
+
+.card-container:nth-child(2) {
+  background-image: url(../Media/Images/ScandicXMux.jpg);
+}
+
+.card-container:nth-child(3) {
+  background-image: url(../Media/Images/RidehusetXMux.jpg);
 }
 
 .card-btn {
@@ -1051,7 +1059,6 @@ footer, img {
   .card-container:nth-child(3) {
     margin-left: 50px;
   }
-  
 }
 
 /*Hvis device har hover aktiveret, skal disse styles bruges*/
