@@ -212,9 +212,18 @@ header {
 
 /* Event cards */
 
-.event-sektion {
+  .event-sektion {
+    position: relative;
     padding: 20px 0;
     overflow-x: hidden;
+    background-color: #cc573b;
+  }
+
+  .event-sektion-seneste {
+    position: relative;
+    padding: 20px 0;
+    overflow-x: hidden;
+    background-color: #cc573b;
   }
   
   .event-container {
@@ -266,7 +275,7 @@ header {
   background-repeat: no-repeat;
   padding: 12.5rem 0 0;
   overflow: hidden;
-  margin-top: 50px;
+  margin: 50px 0;
 }
 
 .card-container:nth-child(2) {
