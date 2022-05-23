@@ -331,23 +331,20 @@ header {
     font-size: 13px;
   }
 
-  
-
-
 /* Footer styiling */
 
 .footer {
-    position: relative;
-    top: 500px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 50px;
-    height: 300px
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  height: 300px
 }
 
-footer, img {
-  width: 10%;
+.footer-img {
+  width: 100%;
+  max-width: 150px;
 }
 
 .footer-nav a{
@@ -363,7 +360,6 @@ footer, img {
     text-decoration: underline;
     color: #b613a0;
 }
-
 
 .designet-af-class:hover{
   color: #F15946;
@@ -398,17 +394,20 @@ footer, img {
 .gem-popup {
   display: none;
 }
+
 .top {
   background-color: #eee;
   border-radius: 20px;
   margin: 16px 0;
   width: 260px;
 }
+
 .text {
   box-sizing: border-box;
   padding: 0 20px 20px;
   width: 100%;
 }
+
 .title {
   justify-content: center;
   text-transform: uppercase;
@@ -420,21 +419,25 @@ footer, img {
   position: relative;
   font-family: 'Prompt';
 }
+
 .tooltip {
   font-size: 16px;
   font-weight: normal;
   margin-top: 2px;
   position: relative;
 }
+
 .tooltip:hover {
   cursor: help;
 }
+
 .tooltip-spacing {
   height: 20px;
   margin: 8px;
   position: relative;
   width: 20px;
 }
+
 .tooltip-bg1 {
   background-color: #0060f6;
   border-radius: 10px;
@@ -445,6 +448,7 @@ footer, img {
   top: 0;
   width: 20px;
 }
+
 .tooltip-bg2 {
   background-color: #fff;
   border-radius: 8px;
@@ -456,6 +460,7 @@ footer, img {
   top: 2px;
   width: 16px;
 }
+
 .tooltip-text {
   font-size: 14px;
   font-weight: bold;
@@ -465,21 +470,25 @@ footer, img {
   width: 20px;
   color: #0060f6;
 }
+
 .info {
   color: #262626;
   display: flex;
   justify-content: space-around;
 }
+
 .popup-bg {
   filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.16))
     drop-shadow(0 3px 6px rgba(0, 0, 0, 0.23));
   position: absolute;
   top: -126px;
 }
+
 .popup-outline {
   position: absolute;
   top: -126px;
 }
+
 .popup-text {
   border-radius: 12px;
   box-sizing: border-box;
@@ -494,34 +503,42 @@ footer, img {
   transition: opacity 240ms 120ms cubic-bezier(0.4, 0, 0.2, 1);
   width: 292px;
 }
+
 .tooltip:hover ~ .popup-text {
   display: block;
 }
+
 .popup-bg {
   opacity: 0;
   transition: opacity 240ms 120ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .popup-outline-left {
   stroke-dasharray: 0 426px;
   stroke-dashoffset: 1px;
   transition: stroke-dasharray 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .popup-outline-right {
   stroke-dasharray: 352px 352px;
   stroke-dashoffset: -352px;
   transition: stroke-dashoffset 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .tooltip:hover ~ .popup-text {
   opacity: 1;
 }
+
 .tooltip:hover ~ .popup-bg {
   opacity: 1;
   transition: opacity 240ms 120ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .tooltip:hover ~ .popup-outline .popup-outline-left {
   stroke-dasharray: 426px 426px;
   transition: stroke-dasharray 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .tooltip:hover ~ .popup-outline .popup-outline-right {
   stroke-dashoffset: 0;
   transition: stroke-dashoffset 300ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -533,6 +550,7 @@ footer, img {
   width: 100%;
   justify-content: center;
 }
+
 .button-primary {
   align-items: center;
   border-radius: 10px;
@@ -555,11 +573,6 @@ footer, img {
 
 .designet-af-class:hover {
   cursor: pointer;
-}
-
-.test {
-  width: 100%;
-  height: auto;
 }
 
 @media only screen and (min-width: 500px) {

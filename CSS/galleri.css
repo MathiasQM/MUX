@@ -575,6 +575,36 @@ body {
     background-image: url(../Media/Images/galleri/Spot-festival-57.jpg);
     background-size: cover;
   }
+  /*Slet kommentar efter*/
+  .imgfivenine {
+    background-image: url(../Media/Images/Fadoel.jpg);
+    background-size: cover;
+  }
+
+  .imgsixty {
+    background-image: url(../Media/Images/FadoelXtre.jpg);
+    background-size: cover;
+  }
+
+  .imgsixone {
+    background-image: url(../Media/Images/Fadoel2.jpg);
+    background-size: cover;
+  }
+
+  .imgsixtwo {
+    background-image: url(../Media/Images/Fadoel3.jpg);
+    background-size: cover;
+  }
+
+  .imgsixthree {
+    background-image: url(../Media/Images/Øl.jpg);
+    background-size: cover;
+  }
+
+  .imgsixfour {
+    background-image: url(../Media/Images/corona.jpg);
+    background-size: cover;
+  }
 
   .floatup-one {
     opacity: 0;
