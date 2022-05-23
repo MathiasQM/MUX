@@ -165,14 +165,14 @@ header {
   }
 
   .fill:hover {
-    color: rgb(241, 115, 18);
-    border: 3px solid rgb(241, 115, 18);
+    color: #b613a0;
+    border: 3px solid #b613a0;
   }
   
   .fill:before {
     content: "";
     position: absolute;
-    background: rgb(26, 26, 26);
+    background: rgb(227, 227, 227);
     bottom: 0;
     left: 0;
     right: 0;
