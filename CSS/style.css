@@ -441,7 +441,7 @@ header {
     transition: 1000ms;
   }
 
- .animation.show {
+  .animation.show {
     opacity: 1;
     transform: translateY(0);
   }
