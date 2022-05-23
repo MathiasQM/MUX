@@ -97,7 +97,6 @@ const okay = document.querySelector('.button-primary').addEventListener('click',
         document.querySelector(".frivillig-btn").style.border = "3px solid black";
         document.querySelector(".span").classList.add('black');
         document.querySelector(".span").style.backgroundColor = "black";
-
      } else {
         document.getElementById("mux-logo").style.filter = "invert(0%)";
         document.querySelector(".frivillig-btn").style.color = "white";
