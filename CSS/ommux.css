@@ -195,15 +195,6 @@ header {
     z-index: 100;
   }
 
-  @keyframes bouncy {
-    0%{top:0em}
-    40%{top:0em}
-    43%{top:-0.9em}
-    46%{top:0em}
-    48%{top:-0.4em}
-    50%{top:0em}
-    100%{top:0em;}
-  }
 
   .some-container {
     margin: 5% 15% 0;
@@ -223,30 +214,33 @@ header {
  }
 
 .om-mux {
+  margin: 70px 0;
   width: 100vw;
-  height: 30vh;
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
   align-items: center;
 }
 
+.om-mux > div > p {
+  padding: 20px;
+}
+
 .om-mux > div {
-  max-width: 25%;
+  max-width: 500px;
 }
 
 .om-mux h1 {
   font-size: 4rem;
   font-weight: bold;
   line-height: 100px;
-  color: transparent;
-  /* -webkit-text-stroke: 1px black; */
+  text-align: center;
   color: #b613a0;
 
 }
 
 .swipercontainer {
+  height: auto;
   position: relative;
-  height: 30vh;
 }
 
 .swiper {
@@ -257,6 +251,7 @@ header {
   width: 100%;
 }
 
+
 /* Footer styiling */
 
 .footer {
@@ -264,12 +259,12 @@ header {
   flex-direction: column;
   align-items: center;
   padding: 50px;
-  height: 300px;
-  position: absolute;
+  position: static;
+  text-align: center;
 }
 
 footer, img {
-  width: 10%;
+  width: 20%;
 }
 
 .footer-nav a{
@@ -288,7 +283,7 @@ footer, img {
 
 
 .designet-af-class:hover{
-  color: #F15946;
+  color: #b613a0;
   text-decoration: underline;
 }
 
@@ -533,9 +528,29 @@ footer, img {
     font-size: 4rem;
   }
 
+  .om-mux {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .left {
+    align-self: flex-start;
+    margin-left: 300px;
+  }
+
+  .right {
+    align-self: flex-end;
+    margin-right: 300px;
+  }
+
 }
 
 @media only screen and (min-width: 1200px) {
+  
+  .om-mux {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
 
   .mux-streger-container{
    display: block;
