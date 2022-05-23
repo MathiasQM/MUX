@@ -44,3 +44,17 @@ floatup3.forEach(floatup3 => {
 floatup4.forEach(floatup4 => {
     observer2.observe(floatup4)
 })
+
+// Audio
+
+var wasplayed = false
+  window.addEventListener("scroll", function() {
+    var scroll = this.scrollY;
+    if (scroll > 500 && scroll < 3000 && !wasplayed) {
+        var audio = new Audio('Media/Audio/Crowd.mp3');
+        audio.play();
+        audio.volume = 0.01;
+        audio.playbackRate = 2;
+        wasplayed = true;
+    }
+});
