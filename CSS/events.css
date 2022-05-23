@@ -329,7 +329,6 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 50px;
   height: 300px;
 }
 
@@ -353,7 +352,7 @@ header {
 }
 
 .designet-af-class:hover{
-  color: #F15946;
+  color: #b613a0;
   text-decoration: underline;
 }
 
