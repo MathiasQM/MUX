@@ -744,6 +744,7 @@ header {
 /* Footer styiling */
 
 .footer {
+  width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -751,8 +752,9 @@ header {
   height: 300px
 }
 
-footer, img {
-  width: 10%;
+.footer-img {
+  width: 100%;
+  max-width: 150px;
 }
 
 .footer-nav a{
@@ -768,7 +770,6 @@ footer, img {
     text-decoration: underline;
     color: #b613a0;
 }
-
 
 .designet-af-class:hover{
   color: #F15946;
