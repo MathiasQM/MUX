@@ -2,20 +2,15 @@
     font-family: 'Prompt', 'Roboto';
 }
 
-button {
-    padding: 20px 40px;
-    font-size: 2rem;
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-h1 {
-    min-width: 100vw;
-    text-align: center;
-    font-size: 2rem;
-}
-
-h2 {
-    text-align: center;
-    font-size: 1.5rem;
+.konstruktion-img {
+    width: 70%;
 }
 
 .konstruktion-container {
@@ -23,31 +18,33 @@ h2 {
     justify-content: center;
 }
 
-.konstruktion-img {
-    height: 300px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 10px;
-    margin-top: 10px;
+.button {
+    position: absolute;
+    top: 50%;
+    z-index: 100;
+    color: #fff;
+    background: #0a0a0a;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    border: 0;
+    outline: 0;
+    font-size: 1.1rem;
+    padding: 12px 35px;
+    width: 200px;
+    display: inline-block;
+    transform: skew(-21deg);
+    border: 3px solid #0a0a0a;
 }
 
 @media only screen and (min-width: 800px) {
-    h1 {
-        font-size: 2.5rem;
+    .button {
+        top: 80%;
     }
-    
-    h2 {
-        font-size: 2rem;
+}
+
+@media only screen and (min-width: 1200px) {
+    .button {
+        top: 90%;
     }
-  }
-  
-  @media only screen and (min-width: 1200px) {
-    h1 {
-        font-size: 3rem;
-    }
-    
-    h2 {
-        font-size: 2.5rem;
-    }
-  }
+}
