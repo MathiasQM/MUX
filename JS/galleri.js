@@ -53,7 +53,7 @@ var wasplayed = false
     if (scroll > 500 && scroll < 3000 && !wasplayed) {
         var audio = new Audio('Media/Audio/Crowd.mp3');
         audio.play();
-        audio.volume = 0.01;
+        audio.volume = 0.02;
         audio.playbackRate = 2;
         wasplayed = true;
     }

@@ -235,7 +235,14 @@ header {
   line-height: 100px;
   text-align: center;
   color: #b613a0;
+}
 
+.order {
+  order: 1;
+}
+
+.order2 {
+  order: 2;
 }
 
 .swipercontainer {
@@ -562,6 +569,14 @@ header {
   .right {
     align-self: flex-end;
     margin-right: 300px;
+  }
+
+  .order {
+    order: 2;
+  }
+  
+  .order2 {
+    order: 1;
   }
 
 }
