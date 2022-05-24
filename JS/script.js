@@ -71,7 +71,7 @@ const okay = document.querySelector('.button-primary').addEventListener('click',
 });
 
 
-// // Invert logo to make it visible in each sektion
+// Invert logo to make it visible in each sektion
 
  var distFromTop = document.querySelector(".om-mux").offsetTop;
  var distFromTop2 = document.querySelector(".galleri").offsetTop;
@@ -103,6 +103,6 @@ const okay = document.querySelector('.button-primary').addEventListener('click',
         document.querySelector(".frivillig-btn").style.border = "3px solid white";
         document.querySelector(".span").classList.remove('black');
         document.querySelector(".span").style.backgroundColor = "white";
-
      }
  })  
+
