@@ -14,11 +14,6 @@ body {
   overflow-x: hidden;
 }
 
-:root {
-  --color: #000;
-}
-
-
 header {
   width: 100vw;
   overflow: hidden;
@@ -34,25 +29,13 @@ header {
   filter: invert(0);
 }
 
-.frivillig-btn {
-  position: fixed;
-  z-index: 100;
-  top: 20px;
-  right: 15%;
-  border: 3px solid #fff;
-  padding: 5px 6px;
-  text-decoration: none;
-  color: #fff;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
 /* Burger menu */
 #menu-toggle {
   opacity: 0;
   display: none;
 }
 
+/* Burger menu icon til kryds animation */
 #menu-toggle:checked+.menu-btn>span {
   transform: rotate(45deg);
 }
@@ -62,6 +45,7 @@ header {
   transform: rotate(0deg);
 }
 
+/* Burder menu icon tilbage til 3 streger*/
 #menu-toggle:checked+.menu-btn>span::after {
   top: 0;
   transform: rotate(90deg);
@@ -74,7 +58,7 @@ header {
 
 .menu-btn {
   position: fixed;
-  top: 40px;
+  top: 30px;
   right: 20px;
   width: 26px;
   height: 26px;
@@ -83,14 +67,17 @@ header {
   color: #fff;
 }
 
+/* Burger menu streger */
+
 .menu-btn>span,
 .menu-btn>span::before,
 .menu-btn>span::after {
   display: block;
   position: absolute;
+  top: 10px;
   width: 100%;
   height: 2px;
-  background-color: #fff;
+  background-color: #ffffff;
   transition-duration: .25s;
 }
 
@@ -100,10 +87,6 @@ header {
 
 .menu-btn>span.span.black::after {
   background-color: #000;
-}
-
-::before {
-  background: var(--color);
 }
 
 .menu-btn>span::before {
@@ -116,6 +99,7 @@ header {
   top: 8px;
 }
 
+/* Bruger menu baggrund */
 .menu-box {
   opacity: 0;
   display: block;
@@ -125,7 +109,7 @@ header {
   width: 100%;
   height: 100%;
   margin: 0;
-  padding: 80px 0;
+  padding: 40px 0;
   list-style: none;
   background-image: linear-gradient(to right, #b613a0, #d41a02);
   box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
@@ -133,6 +117,7 @@ header {
   z-index: 100;
 }
 
+/* Burger menu items */
 .menu-item {
   display: flex;
   justify-content: center;
@@ -146,31 +131,30 @@ header {
   transition-duration: .25s;
 }
 
-.frivillig-btn-container {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
+/* Find biletter knap fill effect */
 
-.frivillig-btn-burgermenu {
+.findtickets-btn {
+  position: fixed;
+  z-index: 100;
+  top: 20px;
+  right: 15%;
+  border: 3px solid #eef0f6;
+  padding: 5px 6px;
   text-decoration: none;
   color: #eef0f6;
-  border: 3px solid #eef0f6;
-  text-align: center;
-  min-width: 20%;
-  font-size: 2rem;
-  overflow: hidden;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .fill:hover {
-  color: rgb(241, 115, 18);
-  border: 3px solid rgb(241, 115, 18);
+  color: #fff;
+  border: 3px solid #fff;
 }
 
 .fill:before {
   content: "";
   position: absolute;
-  background: rgb(26, 26, 26);
+  background: rgb(112, 112, 112);
   bottom: 0;
   left: 0;
   right: 0;
@@ -200,38 +184,8 @@ header {
   z-index: 100;
 }
 
-@keyframes bouncy {
-  0% {
-    top: 0em
-  }
-
-  40% {
-    top: 0em
-  }
-
-  43% {
-    top: -0.9em
-  }
-
-  46% {
-    top: 0em
-  }
-
-  48% {
-    top: -0.4em
-  }
-
-  50% {
-    top: 0em
-  }
-
-  100% {
-    top: 0em;
-  }
-}
-
 .some-container {
-  margin: 5% 15% 0;
+  margin: 5% 5% 0;
   display: flex;
   justify-content: space-evenly;
 }
@@ -240,12 +194,6 @@ header {
   width: 45px;
   height: 45px;
   filter: invert(100%);
-}
-
-.buergermenu-img-container {
-  width: 100%;
-  display: flex;
-  justify-content: center;
 }
 
 .galleri-titel {
@@ -275,8 +223,8 @@ header {
 .card-container {
   position: relative;
   top: 100px;
+  height: auto;
   width: 100%;
-  height: 500px;
   display: flex;
   justify-content: center;
   justify-content: space-around;
@@ -361,7 +309,7 @@ header {
   flex-direction: column;
   align-items: center;
   height: 300px;
-  padding-top: 20px;
+  padding-top: 150px;
   background-color: #fff;
 }
 
@@ -389,11 +337,8 @@ header {
   text-decoration: underline;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap");
-
 .card {
   background-color: #eef0f6;
-  font-family: "Source Sans Pro", sans-serif;
   align-items: center;
   background-color: #fff;
   border-radius: 20px;
@@ -407,8 +352,20 @@ header {
   width: 100%;
   height: 280px;
   z-index: 300;
+  animation: gempopup 1000ms ease;
 }
 
+@keyframes gempopup {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Styling af elementer inde i kortet */
 .info>div>a {
   color: #0060f6;
   text-decoration: none;
@@ -443,128 +400,11 @@ header {
   font-family: 'Prompt';
 }
 
-.tooltip {
-  font-size: 16px;
-  font-weight: normal;
-  margin-top: 2px;
-  position: relative;
-}
-
-.tooltip:hover {
-  cursor: help;
-}
-
-.tooltip-spacing {
-  height: 20px;
-  margin: 8px;
-  position: relative;
-  width: 20px;
-}
-
-.tooltip-bg1 {
-  background-color: #0060f6;
-  border-radius: 10px;
-  content: " ";
-  display: flex;
-  height: 20px;
-  position: absolute;
-  top: 0;
-  width: 20px;
-}
-
-.tooltip-bg2 {
-  background-color: #fff;
-  border-radius: 8px;
-  content: " ";
-  display: flex;
-  height: 16px;
-  left: 2px;
-  position: absolute;
-  top: 2px;
-  width: 16px;
-}
-
-.tooltip-text {
-  font-size: 14px;
-  font-weight: bold;
-  line-height: 20px;
-  position: relative;
-  text-align: center;
-  width: 20px;
-  color: #0060f6;
-}
-
 .info {
   color: #262626;
   display: flex;
   justify-content: space-around;
   font-size: 11px;
-}
-
-.popup-bg {
-  filter: drop-shadow(0 3px 6px rgba(0, 0, 0, 0.16)) drop-shadow(0 3px 6px rgba(0, 0, 0, 0.23));
-  position: absolute;
-  top: -126px;
-}
-
-.popup-outline {
-  position: absolute;
-  top: -126px;
-}
-
-.popup-text {
-  border-radius: 12px;
-  box-sizing: border-box;
-  color: #fff;
-  font-size: 16px;
-  font-weight: normal;
-  left: 8px;
-  opacity: 0;
-  padding: 12px 16px;
-  position: absolute;
-  top: -117px;
-  transition: opacity 240ms 120ms cubic-bezier(0.4, 0, 0.2, 1);
-  width: 292px;
-}
-
-.tooltip:hover~.popup-text {
-  display: block;
-}
-
-.popup-bg {
-  opacity: 0;
-  transition: opacity 240ms 120ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.popup-outline-left {
-  stroke-dasharray: 0 426px;
-  stroke-dashoffset: 1px;
-  transition: stroke-dasharray 300ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.popup-outline-right {
-  stroke-dasharray: 352px 352px;
-  stroke-dashoffset: -352px;
-  transition: stroke-dashoffset 300ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.tooltip:hover~.popup-text {
-  opacity: 1;
-}
-
-.tooltip:hover~.popup-bg {
-  opacity: 1;
-  transition: opacity 240ms 120ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.tooltip:hover~.popup-outline .popup-outline-left {
-  stroke-dasharray: 426px 426px;
-  transition: stroke-dasharray 300ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.tooltip:hover~.popup-outline .popup-outline-right {
-  stroke-dashoffset: 0;
-  transition: stroke-dashoffset 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .buttons {

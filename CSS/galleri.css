@@ -10,10 +10,6 @@ body {
   overflow-x: hidden;
 }
 
-:root {
-  --color: #000;
-}
-
 #mux-logo {
     position: fixed;
     width: 50px;
@@ -23,702 +19,657 @@ body {
     z-index: 2000;
 }
 
-.frivillig-btn {
-  position: fixed;
-  z-index: 100;
-  top: 20px;
-  right: 15%;
-  border: 3px solid #eef0f6;
-  padding: 5px 6px;
-  text-decoration: none;
-  color: #eef0f6;
-  font-weight: bold;
-  text-transform: uppercase;
-}
 /* Burger menu */
 #menu-toggle {
-    opacity: 0;
-    display: none;
-  }
-  
-  #menu-toggle:checked + .menu-btn > span {
-    transform: rotate(45deg);
+  opacity: 0;
+  display: none;
+}
+
+/* Burger menu icon til kryds animation */
+#menu-toggle:checked+.menu-btn>span {
+  transform: rotate(45deg);
+}
+
+#menu-toggle:checked+.menu-btn>span::before {
+  top: 0;
+  transform: rotate(0deg);
+}
+
+/* Burder menu icon tilbage til 3 streger*/
+#menu-toggle:checked+.menu-btn>span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+#menu-toggle:checked~.menu-box {
+  right: 0;
+  opacity: 1;
+}
+
+.menu-btn {
+  position: fixed;
+  top: 30px;
+  right: 20px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 101;
+  color: #fff;
+}
+
+/* Burger menu streger */
+
+.menu-btn>span,
+.menu-btn>span::before,
+.menu-btn>span::after {
+  display: block;
+  position: absolute;
+  top: 10px;
+  width: 100%;
+  height: 2px;
+  background-color: #ffffff;
+  transition-duration: .25s;
+}
+
+.menu-btn>span.span.black::before {
+  background-color: #000;
+}
+
+.menu-btn>span.span.black::after {
+  background-color: #000;
+}
+
+.menu-btn>span::before {
+  content: '';
+  top: -8px;
+}
+
+.menu-btn>span::after {
+  content: '';
+  top: 8px;
+}
+
+/* Bruger menu baggrund */
+.menu-box {
+  opacity: 0;
+  display: block;
+  position: fixed;
+  top: 0%;
+  right: -100%;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 40px 0;
+  list-style: none;
+  background-image: linear-gradient(to right, #b613a0, #d41a02);
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+  transition-duration: .25s;
+  z-index: 100;
+}
+
+/* Burger menu items */
+.menu-item {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 12px 24px;
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition-duration: .25s;
+}
+
+.menu-item:hover {
+  background-color: rgb(221, 83, 48);
+}
+
+.grey-box {
+  position: fixed;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  display: none;
+  overflow: visible;
+  background-color: #262626;
+  opacity: 0.35;
+  z-index: 100;
   }
 
-  #menu-toggle:checked + .menu-btn > span::before {
-    top: 0;
-    transform: rotate(0deg);
+.some-container {
+  margin: 5% 15% 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.some-img {
+  width: 45px;
+  height: 45px;
+  filter: invert(100%);
   }
 
-  #menu-toggle:checked + .menu-btn > span::after {
-    top: 0;
-    transform: rotate(90deg);
+/* Styling af første sektion */
+.aftermovie {
+  position: absolute;
+  top: 100px;
+  right: 5%;
+  width: 40%;
+  display: none;
+}
+
+.svg-container {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  z-index: 20;
+  height: 100vh;
+  width: 100vw;
+}
+
+.titleone {
+  position: relative;
+  animation-name: slidedown;
+  animation-duration: .5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: both;
+  animation-timing-function: linear;
+  overflow: hidden;
+  max-width: 100vw;
+}
+
+/* Sektion: Galleri */
+
+.galleri {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-around;
+  overflow: hidden;
+  height: 4000px;
   }
 
-  #menu-toggle:checked ~ .menu-box {
-    right: 0;
-    opacity: 1;
-  }
+.galleri > video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -10;
+  height: 130vh;
+  width: auto;
+}
 
-  .menu-btn {
-    position: fixed;
-    top: 40px;
-    right: 20px;
-    width: 26px;
-    height: 26px;
-    cursor: pointer;
-    z-index: 101;
-  }
-  
-  .menu-btn > span,
-  .menu-btn > span::before,
-  .menu-btn > span::after {
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    background-color: #ffffff;
-    transition-duration: .25s;
-  }
+.galleri-titel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  position: absolute;
+  z-index: 20;
+  font-size: 6vw;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.236);
+  padding-top: 15%;
+}
 
-  ::before {
-    background: var(--color);
-  }
+.animation {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: 1000ms;
+}
 
-  .menu-btn > span::before {
-    content: '';
-    top: -8px;
-  }
+.animation.show {
+  opacity: 1;
+  transform: translateY(0);
+}
 
-  .menu-btn > span::after {
-    content: '';
-    top: 8px;
-  }
+.img {
+  z-index: 2;
+  overflow: hidden;
+  color: #fff;
+  height: 400px;
+  width: 300px;
+  border-radius: 20px;
+  position: relative;
+  margin: 50px;
+}
 
+/* Indsætter billeder */
+.imgone {
+  background-image: url(../Media/Images/galleri/Spot-festival-1.jpg);
+  background-size: cover;
+}
+
+.imgtwo {
+  background-image: url(../Media/Images/galleri/Spot-festival-2.jpg);
+  background-size: cover;
+}
+
+.imgthree {
+  background-image: url(../Media/Images/galleri/Spot-festival-3.jpg);
+  background-size: cover;
+}
+
+.imgfour {
+  background-image: url(../Media/Images/galleri/Spot-festival-4.jpg);
+  background-size: cover;
+}
+
+.imgfive {
+  background-image: url(../Media/Images/galleri/Spot-festival-5.jpg);
+  background-size: cover;
+}
+
+.imgsix {
+  background-image: url(../Media/Images/galleri/Spot-festival-6.jpg);
+  background-size: cover;
+}
+
+.imgseven {
+  background-image: url(../Media/Images/galleri/Spot-festival-7.jpg);
+  background-size: cover;
+}
+
+.imgeight {
+  background-image: url(../Media/Images/galleri/Spot-festival-8.jpg);
+  background-size: cover;
+}
+
+.imgnine {
+  background-image: url(../Media/Images/galleri/Spot-festival-9.jpg);
+  background-size: cover;
+}
+
+.imgten {
+  background-image: url(../Media/Images/galleri/Spot-festival-10.jpg);
+  background-size: cover;
+}
+
+.imgeleven {
+  background-image: url(../Media/Images/galleri/Spot-festival-11.jpg);
+  background-size: cover;
+}
+
+.imgtvelve {
+  background-image: url(../Media/Images/galleri/Spot-festival-12.jpg);
+  background-size: cover;
+}
+
+.imgthirteen {
+  background-image: url(../Media/Images/galleri/Spot-festival-13.jpg);
+  background-size: cover;
+}
+
+.imgfourteen{
+  background-image: url(../Media/Images/galleri/Spot-festival-14.jpg);
+  background-size: cover;
+}
+
+.imgfifteen {
+  background-image: url(../Media/Images/galleri/Spot-festival-15.jpg);
+  background-size: cover;
+}
+
+.imgsixteen {
+  background-image: url(../Media/Images/galleri/Spot-festival-16.jpg);
+  background-size: cover;
+}
+
+.imgseventeen {
+  background-image: url(../Media/Images/galleri/Spot-festival-17.jpg);
+  background-size: cover;
+}
+
+.imgeightteen {
+  background-image: url(../Media/Images/galleri/Spot-festival-18.jpg);
+  background-size: cover;
+}
+
+.imgnineteen {
+  background-image: url(../Media/Images/galleri/Spot-festival-19.jpg);
+  background-size: cover;
+}
+
+.imgtwenty {
+  background-image: url(../Media/Images/galleri/Spot-festival-20.jpg);
+  background-size: cover;
+}
+
+.imgtwoone {
+  background-image: url(../Media/Images/galleri/Spot-festival-21.jpg);
+  background-size: cover;
+}
+
+.imgtwotwo {
+  background-image: url(../Media/Images/galleri/Spot-festival-22.jpg);
+  background-size: cover;
+}
+
+.imgtwothree {
+  background-image: url(../Media/Images/galleri/Spot-festival-23.jpg);
+  background-size: cover;
+}
+
+.imgtwofour {
+  background-image: url(../Media/Images/galleri/Spot-festival-24.jpg);
+  background-size: cover;
+}
+
+.imgtwofive {
+  background-image: url(../Media/Images/galleri/Spot-festival-25.jpg);
+  background-size: cover;
+}
+
+.imgtwosix {
+  background-image: url(../Media/Images/galleri/Spot-festival-26.jpg);
+  background-size: cover;
+}
+
+.imgtwoseven {
+  background-image: url(../Media/Images/galleri/Spot-festival-27.jpg);
+  background-size: cover;
+}
+
+.imgtwoeight {
+  background-image: url(../Media/Images/galleri/Spot-festival-28.jpg);
+  background-size: cover;
+}
+
+.imgtwonine {
+  background-image: url(../Media/Images/galleri/Spot-festival-29.jpg);
+  background-size: cover;
+}
+
+.imgthreezero {
+  background-image: url(../Media/Images/galleri/Spot-festival-30.jpg);
+  background-size: cover;
+}
+
+.imgthreeone {
+  background-image: url(../Media/Images/galleri/Spot-festival-31.jpg);
+  background-size: cover;
+}
+
+.imgthreetwo {
+  background-image: url(../Media/Images/galleri/Spot-festival-32.jpg);
+  background-size: cover;
+}
+
+.imgthreethree {
+  background-image: url(../Media/Images/galleri/Spot-festival-33.jpg);
+  background-size: cover;
+}
+
+.imgthreefour {
+  background-image: url(../Media/Images/galleri/Spot-festival-34.jpg);
+  background-size: cover;
+}
+
+.imgthreefive {
+  background-image: url(../Media/Images/galleri/Spot-festival-35.jpg);
+  background-size: cover;
+}
+
+.imgthreesix {
+  background-image: url(../Media/Images/galleri/Spot-festival-36.jpg);
+  background-size: cover;
+}
+
+.imgthreeseven {
+  background-image: url(../Media/Images/galleri/Spot-festival-37.jpg);
+  background-size: cover;
+}
+
+.imgthreenine {
+  background-image: url(../Media/Images/galleri/Spot-festival-38.jpg);
+  background-size: cover;
+}
+
+.imgfourty {
+  background-image: url(../Media/Images/galleri/Spot-festival-39.jpg);
+  background-size: cover;
+}
+
+.imgfourone {
+  background-image: url(../Media/Images/galleri/Spot-festival-40.jpg);
+  background-size: cover;
+}
+
+.imgfourtwo {
+  background-image: url(../Media/Images/galleri/Spot-festival-41.jpg);
+  background-size: cover;
+}
+
+.imgfourthree {
+  background-image: url(../Media/Images/galleri/Spot-festival-42.jpg);
+  background-size: cover;
+}
+
+.imgfourfour {
+  background-image: url(../Media/Images/galleri/Spot-festival-43.jpg);
+  background-size: cover;
+}
+
+.imgfourfive {
+  background-image: url(../Media/Images/galleri/Spot-festival-44.jpg);
+  background-size: cover;
+}
+
+.imgfoursix {
+  background-image: url(../Media/Images/galleri/Spot-festival-45.jpg);
+  background-size: cover;
+}
+
+.imgfourseven {
+  background-image: url(../Media/Images/galleri/Spot-festival-46.jpg);
+  background-size: cover;
+}
+
+.imgfoureight {
+  background-image: url(../Media/Images/galleri/Spot-festival-47.jpg);
+  background-size: cover;
+}
+
+.imgfournine {
+  background-image: url(../Media/Images/galleri/Spot-festival-48.jpg);
+  background-size: cover;
+}
+
+.imgfifty {
+  background-image: url(../Media/Images/galleri/Spot-festival-49.jpg);
+  background-size: cover;
+}
+
+.imgfiveone {
+  background-image: url(../Media/Images/galleri/Spot-festival-50.jpg);
+  background-size: cover;
+}
+
+.imgfivetwo {
+  background-image: url(../Media/Images/galleri/Spot-festival-51.jpg);
+  background-size: cover;
+}
+
+.imgfivethree {
+  background-image: url(../Media/Images/galleri/Spot-festival-52.jpg);
+  background-size: cover;
+}
+
+.imgfivefour {
+  background-image: url(../Media/Images/galleri/Spot-festival-53.jpg);
+  background-size: cover;
+}
+
+.imgfivefive {
+  background-image: url(../Media/Images/galleri/Spot-festival-54.jpg);
+  background-size: cover;
+}
+
+.imgfivesix {
+  background-image: url(../Media/Images/galleri/Spot-festival-55.jpg);
+  background-size: cover;
+}
+
+.imgfiveseven {
+  background-image: url(../Media/Images/galleri/Spot-festival-56.jpg);
+  background-size: cover;
+}
+
+.imgfiveeight {
+  background-image: url(../Media/Images/galleri/Spot-festival-57.jpg);
+  background-size: cover;
+}
+
+.imgfivenine {
+  background-image: url(../Media/Images/Fadoel.jpg);
+  background-size: cover;
+}
+
+.imgsixty {
+  background-image: url(../Media/Images/FadoelXtre.jpg);
+  background-size: cover;
+}
+
+.imgsixone {
+  background-image: url(../Media/Images/Fadoel2.jpg);
+  background-size: cover;
+}
+
+.imgsixtwo {
+  background-image: url(../Media/Images/Fadoel3.jpg);
+  background-size: cover;
+}
+
+.imgsixthree {
+  background-image: url(../Media/Images/Øl.jpg);
+  background-size: cover;
+}
+
+.imgsixfour {
+  background-image: url(../Media/Images/corona.jpg);
+  background-size: cover;
+}
+
+/* Float up animation */
+
+.floatup-one {
+  opacity: 0;
+  transform: translateY(500px);
+  transition: 2s;
+}
+
+.floatup-one.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.floatup-two {
+  opacity: 0;
+  transform: translateY(500px);
+  transition: 3s;
+}
+
+.floatup-two.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.floatup-three {
+  opacity: 1;
+  transform: translateY(300px);
+  transition: 1.5s;
+}
+
+.floatup-three.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.floatup-four {
+  opacity: 1;
+  transform: translateY(400px);
+  transition: 2s;
+}
+
+.floatup-four.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+.lower-img {
+  margin-top: 100px;
+}
+
+.img-container {
+  width: 140vw;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Media queries begynder */
+
+@media only screen and (min-width: 500px) {
+  .samarbejdspartnere img {
+    width: 10%;
+  }
+}
+
+
+@media only screen and (min-width: 800px) {
   .menu-box {
-    opacity: 0;
+    width: 60%;
+  }
+
+  #menu-toggle:checked ~ .grey-box {
     display: block;
-    position: fixed;
-    top: 0%;
-    right: -100%;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 80px 0;
-    list-style: none;
-    background-image: linear-gradient(to right, #b613a0, #d41a02);
-    box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
-    transition-duration: .25s;
-    z-index: 100;
   }
 
-  .menu-item {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    text-transform: uppercase;
-    padding: 12px 24px;
-    color: #fff;
-    font-size: 3rem;
-    font-weight: 600;
-    text-decoration: none;
-    transition-duration: .25s;
+  .box:nth-child(1) {
+    margin-bottom: 0px;
   }
 
-  .frivillig-btn-container {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-
-  .frivillig-btn-burgermenu {
-    text-decoration: none;
-    color: #eef0f6;
-    border: 3px solid #eef0f6;
-    text-align: center;
-    min-width: 20%;
-    font-size: 2rem;
-    overflow: hidden;
-  }
-
-  .fill:hover {
-    color: rgb(241, 115, 18);
-    border: 1px solid rgb(241, 115, 18);
-  }
-  
-  .fill:before {
-    content: "";
-    position: absolute;
-    background: rgb(26, 26, 26);
-    bottom: 0;
-    left: 0;
-    right: 0;
-    top: 100%;
-    z-index: -1;
-    transition: top 0.09s ease-in;
-  }
-  
-  .fill:hover:before {
-    top: 0;
-  }
-  
-  .menu-item:hover {
-    background-color: rgb(221, 83, 48);
-  }
-  
-  .grey-box {
-    position: fixed;
-    left: 0%;
-    top: 0%;
-    right: 0%;
-    bottom: 0%;
-    display: none;
-    overflow: visible;
-    background-color: #262626;
-    opacity: 0.35;
-    z-index: 100;
-  }
-
-  @keyframes bouncy {
-    0%{top:0em}
-    40%{top:0em}
-    43%{top:-0.9em}
-    46%{top:0em}
-    48%{top:-0.4em}
-    50%{top:0em}
-    100%{top:0em;}
-  }
-
-  .some-container {
-    margin: 5% 15% 0;
-    display: flex;
-    justify-content: space-evenly;
-  }
-
-  .some-img {
-    width: 45px;
-    height: 45px;
-    filter: invert(100%);
-  }
- .buergermenu-img-container {
-   width: 100%;
-   display: flex;
-   justify-content: center;
- }
-   .aftermovie {
-    position: absolute;
-    top: 100px;
-    right: 5%;
-    width: 40%;
-    display: none;
+  .aftermovie {
+    display: block;
   }
 
   .svg-container {
-    position: absolute;
-    top: 100px;
-    left: 0;
-    z-index: 20;
-    height: 100vh;
+    left: 0%;
+  }
+
+  .frivillig-btn {
+    right: 10%;
+  }
+
+  .gradient-background {
+    width: 110vw;
+  }
+
+  .event-card:nth-child(1) {
+    margin-right: 50px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+
+  .mux-streger-container{
+    display: block;
+  }
+
+  .frivillig-btn {
+    right: 7%;
+  }
+  .gradient-background {
     width: 100vw;
   }
 
-  .titleone {
-    position: relative;
-    animation-name: slidedown;
-    animation-duration: .5s;
-    animation-iteration-count: 1;
-    animation-fill-mode: both;
-    animation-timing-function: linear;
-    overflow: hidden;
-    max-width: 100vw;
-  }
-
-  /* Sektion: Galleri */
-
-  .galleri {
-    position: relative;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: space-around;
-    overflow: hidden;
-    height: 4000px;
-  }
-
-  .galleri > video {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -10;
-    height: 130vh;
-    width: auto;
-  }
-
-  .galleri-titel {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    color: #fff;
-    position: absolute;
-    z-index: 20;
-    font-size: 6vw;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.236);
-    padding-top: 15%;
-  }
-
-  .animation {
-    opacity: 0;
-    transform: translateY(100px);
-    transition: 1000ms;
-  }
-
- .animation.show {
-    opacity: 1;
-    transform: translateY(0);
-  }
-
-  .img {
-    z-index: 2;
-    overflow: hidden;
-    color: #fff;
-    height: 400px;
-    width: 300px;
-    border-radius: 20px;
-    position: relative;
-    margin: 50px;
-  }  
-  
-  .imgone {
-    background-image: url(../Media/Images/galleri/Spot-festival-1.jpg);
-    background-size: cover;
-  }
-
-  .imgtwo {
-    background-image: url(../Media/Images/galleri/Spot-festival-2.jpg);
-    background-size: cover;
-  }
-
-  .imgthree {
-    background-image: url(../Media/Images/galleri/Spot-festival-3.jpg);
-    background-size: cover;
-  }
-
-  .imgfour {
-    background-image: url(../Media/Images/galleri/Spot-festival-4.jpg);
-    background-size: cover;
-  }
-
-  .imgfive {
-    background-image: url(../Media/Images/galleri/Spot-festival-5.jpg);
-    background-size: cover;
-  }
-
-  .imgsix {
-    background-image: url(../Media/Images/galleri/Spot-festival-6.jpg);
-    background-size: cover;
-  }
-
-  .imgseven {
-    background-image: url(../Media/Images/galleri/Spot-festival-7.jpg);
-    background-size: cover;
-  }
-
-  .imgeight {
-    background-image: url(../Media/Images/galleri/Spot-festival-8.jpg);
-    background-size: cover;
-  }
-
-  .imgnine {
-    background-image: url(../Media/Images/galleri/Spot-festival-9.jpg);
-    background-size: cover;
-  }
-
-  .imgten {
-    background-image: url(../Media/Images/galleri/Spot-festival-10.jpg);
-    background-size: cover;
-  }
-
-  .imgeleven {
-    background-image: url(../Media/Images/galleri/Spot-festival-11.jpg);
-    background-size: cover;
-  }
-
-  .imgtvelve {
-    background-image: url(../Media/Images/galleri/Spot-festival-12.jpg);
-    background-size: cover;
-  }
-
-  .imgthirteen {
-    background-image: url(../Media/Images/galleri/Spot-festival-13.jpg);
-    background-size: cover;
-  }
-
-  .imgfourteen{
-    background-image: url(../Media/Images/galleri/Spot-festival-14.jpg);
-    background-size: cover;
-  }
-
-  .imgfifteen {
-    background-image: url(../Media/Images/galleri/Spot-festival-15.jpg);
-    background-size: cover;
-  }
-
-  .imgsixteen {
-    background-image: url(../Media/Images/galleri/Spot-festival-16.jpg);
-    background-size: cover;
-  }
-
-  .imgseventeen {
-    background-image: url(../Media/Images/galleri/Spot-festival-17.jpg);
-    background-size: cover;
-  }
-
-  .imgeightteen {
-    background-image: url(../Media/Images/galleri/Spot-festival-18.jpg);
-    background-size: cover;
-  }
-
-  .imgnineteen {
-    background-image: url(../Media/Images/galleri/Spot-festival-19.jpg);
-    background-size: cover;
-  }
-
-  .imgtwenty {
-    background-image: url(../Media/Images/galleri/Spot-festival-20.jpg);
-    background-size: cover;
-  }
-
-  .imgtwoone {
-    background-image: url(../Media/Images/galleri/Spot-festival-21.jpg);
-    background-size: cover;
-  }
-
-  .imgtwotwo {
-    background-image: url(../Media/Images/galleri/Spot-festival-22.jpg);
-    background-size: cover;
-  }
-
-  .imgtwothree {
-    background-image: url(../Media/Images/galleri/Spot-festival-23.jpg);
-    background-size: cover;
-  }
-
-  .imgtwofour {
-    background-image: url(../Media/Images/galleri/Spot-festival-24.jpg);
-    background-size: cover;
-  }
-
-  .imgtwofive {
-    background-image: url(../Media/Images/galleri/Spot-festival-25.jpg);
-    background-size: cover;
-  }
-
-  .imgtwosix {
-    background-image: url(../Media/Images/galleri/Spot-festival-26.jpg);
-    background-size: cover;
-  }
-
-  .imgtwoseven {
-    background-image: url(../Media/Images/galleri/Spot-festival-27.jpg);
-    background-size: cover;
-  }
-
-  .imgtwoeight {
-    background-image: url(../Media/Images/galleri/Spot-festival-28.jpg);
-    background-size: cover;
-  }
-
-  .imgtwonine {
-    background-image: url(../Media/Images/galleri/Spot-festival-29.jpg);
-    background-size: cover;
-  }
-
-  .imgthreezero {
-    background-image: url(../Media/Images/galleri/Spot-festival-30.jpg);
-    background-size: cover;
-  }
-
-  .imgthreeone {
-    background-image: url(../Media/Images/galleri/Spot-festival-31.jpg);
-    background-size: cover;
-  }
-
-  .imgthreetwo {
-    background-image: url(../Media/Images/galleri/Spot-festival-32.jpg);
-    background-size: cover;
-  }
-
-  .imgthreethree {
-    background-image: url(../Media/Images/galleri/Spot-festival-33.jpg);
-    background-size: cover;
-  }
-
-  .imgthreefour {
-    background-image: url(../Media/Images/galleri/Spot-festival-34.jpg);
-    background-size: cover;
-  }
-
-  .imgthreefive {
-    background-image: url(../Media/Images/galleri/Spot-festival-35.jpg);
-    background-size: cover;
-  }
-
-  .imgthreesix {
-    background-image: url(../Media/Images/galleri/Spot-festival-36.jpg);
-    background-size: cover;
-  }
-
-  .imgthreeseven {
-    background-image: url(../Media/Images/galleri/Spot-festival-37.jpg);
-    background-size: cover;
-  }
-
-  .imgthreenine {
-    background-image: url(../Media/Images/galleri/Spot-festival-38.jpg);
-    background-size: cover;
-  }
-
-  .imgfourty {
-    background-image: url(../Media/Images/galleri/Spot-festival-39.jpg);
-    background-size: cover;
-  }
-
-  .imgfourone {
-    background-image: url(../Media/Images/galleri/Spot-festival-40.jpg);
-    background-size: cover;
-  }
-
-  .imgfourtwo {
-    background-image: url(../Media/Images/galleri/Spot-festival-41.jpg);
-    background-size: cover;
-  }
-
-  .imgfourthree {
-    background-image: url(../Media/Images/galleri/Spot-festival-42.jpg);
-    background-size: cover;
-  }
-
-  .imgfourfour {
-    background-image: url(../Media/Images/galleri/Spot-festival-43.jpg);
-    background-size: cover;
-  }
-
-  .imgfourfive {
-    background-image: url(../Media/Images/galleri/Spot-festival-44.jpg);
-    background-size: cover;
-  }
-
-  .imgfoursix {
-    background-image: url(../Media/Images/galleri/Spot-festival-45.jpg);
-    background-size: cover;
-  }
-
-  .imgfourseven {
-    background-image: url(../Media/Images/galleri/Spot-festival-46.jpg);
-    background-size: cover;
-  }
-
-  .imgfoureight {
-    background-image: url(../Media/Images/galleri/Spot-festival-47.jpg);
-    background-size: cover;
-  }
-
-  .imgfournine {
-    background-image: url(../Media/Images/galleri/Spot-festival-48.jpg);
-    background-size: cover;
-  }
-
-  .imgfifty {
-    background-image: url(../Media/Images/galleri/Spot-festival-49.jpg);
-    background-size: cover;
-  }
-
-  .imgfiveone {
-    background-image: url(../Media/Images/galleri/Spot-festival-50.jpg);
-    background-size: cover;
-  }
-
-  .imgfivetwo {
-    background-image: url(../Media/Images/galleri/Spot-festival-51.jpg);
-    background-size: cover;
-  }
-
-  .imgfivethree {
-    background-image: url(../Media/Images/galleri/Spot-festival-52.jpg);
-    background-size: cover;
-  }
-
-  .imgfivefour {
-    background-image: url(../Media/Images/galleri/Spot-festival-53.jpg);
-    background-size: cover;
-  }
-
-  .imgfivefive {
-    background-image: url(../Media/Images/galleri/Spot-festival-54.jpg);
-    background-size: cover;
-  }
-
-  .imgfivesix {
-    background-image: url(../Media/Images/galleri/Spot-festival-55.jpg);
-    background-size: cover;
-  }
-
-  .imgfiveseven {
-    background-image: url(../Media/Images/galleri/Spot-festival-56.jpg);
-    background-size: cover;
-  }
-
-  .imgfiveeight {
-    background-image: url(../Media/Images/galleri/Spot-festival-57.jpg);
-    background-size: cover;
-  }
-  
-  .imgfivenine {
-    background-image: url(../Media/Images/Fadoel.jpg);
-    background-size: cover;
-  }
-
-  .imgsixty {
-    background-image: url(../Media/Images/FadoelXtre.jpg);
-    background-size: cover;
-  }
-
-  .imgsixone {
-    background-image: url(../Media/Images/Fadoel2.jpg);
-    background-size: cover;
-  }
-
-  .imgsixtwo {
-    background-image: url(../Media/Images/Fadoel3.jpg);
-    background-size: cover;
-  }
-
-  .imgsixthree {
-    background-image: url(../Media/Images/Øl.jpg);
-    background-size: cover;
-  }
-
-  .imgsixfour {
-    background-image: url(../Media/Images/corona.jpg);
-    background-size: cover;
-  }
-
-  .floatup-one {
-    opacity: 0;
-    transform: translateY(500px);
-    transition: 2s;
-  }
-
-  .floatup-one.show {
-    opacity: 1;
-    transform: translateY(0);
-  }
-
-  .floatup-two {
-    opacity: 0;
-    transform: translateY(500px);
-    transition: 3s;
-  }
-
-  .floatup-two.show {
-    opacity: 1;
-    transform: translateY(0);
-  }
-
-  .floatup-three {
-    opacity: 1;
-    transform: translateY(300px);
-    transition: 1.5s;
-  }
-
-  .floatup-three.show {
-    opacity: 1;
-    transform: translateY(0);
-  }
-
-  .floatup-four {
-    opacity: 1;
-    transform: translateY(400px);
-    transition: 2s;
-  }
-
-  .floatup-four.show {
-    opacity: 1;
-    transform: translateY(0);
-  }
-
-
-  #lower-img {
-    margin-top: 100px;
-  }
-
-  .test {
-      width: 140vw;
-      display: flex;
-      flex-direction: column;
-  }
-
-  @media only screen and (min-width: 500px) {
-    .samarbejdspartnere img {
-      width: 10%;
-    }
-  }
-  
-  
-  @media only screen and (min-width: 800px) {
-    .menu-box {
-      width: 60%;
-    }
-  
-    #menu-toggle:checked ~ .grey-box {
-      display: block;
-    }
-  
-    .box:nth-child(1) {
-      margin-bottom: 0px;
-    }
-  
-    .aftermovie {
-      display: block;
-    }
-  
-    .svg-container {
-      left: 0%;
-    }
-  
-    .frivillig-btn {
-      right: 10%;
-    }
-  
-    .gradient-background {
-      width: 110vw;
-    }
-  
-    .event-card:nth-child(1) {
-      margin-right: 50px;
-    }
-  }
-
-  @media only screen and (min-width: 1200px) {
-  
-    .mux-streger-container{
-     display: block;
-    }  
-  
-    .frivillig-btn {
-      right: 7%;
-    }
-    .gradient-background {
-      width: 100vw;
-    }
-  
     .event-card:nth-child(2) {
-      margin-right: 50px;
-    }
-    .samarbejdspartnere img {
-      width: 5%;
-    }
+    margin-right: 50px;
+  }
+  .samarbejdspartnere img {
+    width: 5%;
+  }
 }
