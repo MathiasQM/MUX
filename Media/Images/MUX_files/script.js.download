@@ -81,26 +81,26 @@ const okay = document.querySelector('.button-primary').addEventListener('click',
      var scroll = this.scrollY;
      if (scroll > distFromTop && scroll < distFromTop2) {
          document.getElementById("mux-logo").style.filter = "invert(100%)";
-         document.querySelector(".findtickets-btn").style.color = "black";
-         document.querySelector(".findtickets-btn").style.border = "3px solid black";
+         document.querySelector(".frivillig-btn").style.color = "black";
+         document.querySelector(".frivillig-btn").style.border = "3px solid black";
          document.querySelector(".span").classList.add('black');
          document.querySelector(".span").style.backgroundColor = "black";
      } else if (scroll > distFromTop2 && scroll < distFromTop3) {
         document.getElementById("mux-logo").style.filter = "invert(0%)";
-        document.querySelector(".findtickets-btn").style.color = "white";
-        document.querySelector(".findtickets-btn").style.border = "3px solid white";
+        document.querySelector(".frivillig-btn").style.color = "white";
+        document.querySelector(".frivillig-btn").style.border = "3px solid white";
         document.querySelector(".span").classList.remove('black');
         document.querySelector(".span").style.backgroundColor = "white";
      } else if (scroll > distFromTop3){
         document.getElementById("mux-logo").style.filter = "invert(100%)";
-        document.querySelector(".findtickets-btn").style.color = "black";
-        document.querySelector(".findtickets-btn").style.border = "3px solid black";
+        document.querySelector(".frivillig-btn").style.color = "black";
+        document.querySelector(".frivillig-btn").style.border = "3px solid black";
         document.querySelector(".span").classList.add('black');
         document.querySelector(".span").style.backgroundColor = "black";
      } else {
         document.getElementById("mux-logo").style.filter = "invert(0%)";
-        document.querySelector(".findtickets-btn").style.color = "white";
-        document.querySelector(".findtickets-btn").style.border = "3px solid white";
+        document.querySelector(".frivillig-btn").style.color = "white";
+        document.querySelector(".frivillig-btn").style.border = "3px solid white";
         document.querySelector(".span").classList.remove('black');
         document.querySelector(".span").style.backgroundColor = "white";
      }

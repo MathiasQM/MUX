@@ -1,219 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="CSS/reset.css" />
-    <link rel="stylesheet" href="CSS/events.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"/>
-    <link rel="icon" href="Media/Images/Mux-tabicon.png">
-    <title>MUX | Events</title>
-  </head>
-  <body>
-    <header>
-      <a href="index.html">
-        <img
-        id="mux-logo"
-        src="Media/Images/Mux-logo-alpha.png"
-        alt="Mux logo uden baggrund"
-        />
-      </a>
-      <nav>
-        <div class="hamburger-menu">
-          <input id="menu-toggle" type="checkbox" />
-          <label class="menu-btn" for="menu-toggle">
-            <span class="span"></span>
-          </label>
-          <div class="grey-box"></div>
-          <ul class="menu-box">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="CSS/reset.css" />
+  <link rel="stylesheet" href="CSS/events.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="icon" href="Media/Images/Mux-tabicon.png">
+  <title>MUX | Events</title>
+</head>
+
+<body>
+  <header>
+    <a href="index.html">
+      <img id="mux-logo" src="Media/Images/Mux-logo-alpha.png" alt="Mux logo uden baggrund" />
+    </a>
+    <nav>
+      <!-- Begyndelse på burger menu -->
+      <div class="hamburger-menu">
+        <input id="menu-toggle" type="checkbox" />
+        <label class="menu-btn" for="menu-toggle">
+          <span class="span"></span>
+        </label>
+        <div class="grey-box"></div>
+
+        <div class="menu-box">
+          <ul>
             <li><a class="menu-item" href="index.html">HJEM</a></li>
             <li><a class="menu-item" href="ommux.html">OM MUX</a></li>
             <li><a class="menu-item" href="galleri.html">GALLERI</a></li>
             <li><a class="menu-item" href="events.html">EVENTS</a></li>
             <li><a class="menu-item" href="kontaktos.html">KONTAKT OS</a></li>
-            <div class="some-container">
-              <img
-                class="some-img"
-                src="media/Images/f_logo_RGB-Black_58.png"
-                alt="Facebook logo"
-              />
-              <img
-                class="some-img"
-                src="media/Images/glyph-logo_May2016.png"
-                alt="Instagram logo"
-              />
-            </div>
           </ul>
-        </div>
-      </nav>
-    </header>
-    <main class="event-sektion" id="biletter">
-            <h1 class="event-titel" id="event-titel">Kommende</h1>
-            <h1 class="event-titel-event">Events</h1>
-            <div class="event-container">
-                <div class="card-container">
-                  <div class="event-card">
-                    <h2 class="card-title">Rumgehør</h2>
-                    <p class="event-card-body">22/09/2022</p>
-                    <a href="konstruktion.html"><button class="card-btn" type="button">Køb billet</button></a>
-                  </div>
-                </div>
-                <div class="card-container">
-                  <div class="event-card">
-                    <h2 class="card-title">Rumgehør</h2>
-                    <p class="event-card-body">22/09/2022</p>
-                    <a href="konstruktion.html"><button class="card-btn" type="button">Køb billet</button></a>
-                  </div>
-                </div>
-                <div class="card-container">
-                  <div class="event-card">
-                    <h2 class="card-title">Rumgehør</h2>
-                    <p class="event-card-body">22/09/2022</p>
-                    <a href="konstruktion.html"><button class="card-btn" type="button">Køb billet</button></a>
-                  </div>
-                </div>
-            </div>
-      </main>
-      <section class="event-sektion-seneste" id="biletter">
-        <h1 class="event-titel" id="event-titel">Seneste</h1>
-        <h1 class="event-titel-event">Events</h1>
-        <div class="event-container">
-            <div class="card-container">
-              <div class="event-card">
-                <h2 class="card-title">SPOT</h2>
-                <p class="event-card-body">06/05/2022</p>
-                <a href="konstruktion.html"><button class="card-btn" type="button">Se Event</button></a>
-              </div>
-            </div>
-            <div class="card-container">
-              <div class="event-card">
-                <h2 class="card-title">Scandic</h2>
-                <p class="event-card-body">26/03/2022</p>
-                <a href="konstruktion.html"><button class="card-btn" type="button">Se Event</button></a>
-              </div>
-            </div>
-            <div class="card-container">
-              <div class="event-card">
-                <h2 class="card-title">Ridehuset</h2>
-                <p class="event-card-body">14/08/2022</p>
-                <a href="konstruktion.html"><button class="card-btn" type="button">Se Event</button></a>
-              </div>
-            </div>
-        </div>
-      </section>
-    <!--Begyndelse på footer-->
-    <footer class="footer">
-      <a href="index.html"><video class="footer-img" src="Media/Videos/thisoneforreal.mp4" autoplay loop muted></video></a>
-      <div class="some-container">
-        <a href="https://www.facebook.com/MUX8000/"><img
-          style="filter: invert(0); margin-right: 40px;"
-          class="some-img"
-          src="media/Images/f_logo_RGB-Black_58.png"
-          alt="Facebook logo"
-        /></a>
-        <a href="https://www.instagram.com/mux8000/"><img
-          style="filter: invert(0);"
-          class="some-img"
-          src="media/Images/glyph-logo_May2016.png"
-          alt="Instagram logo"
-        /></a>
-      </div>
-      <p>CVR-nr: 39626721 | Vester Allé 15, 8000 Aarhus C</p>
-      <div class="footer-nav">
-        <a href="index.html">Hjem</a>
-        <a href="ommux.html">Om Mux</a>
-        <a href="galleri.html">Galleri</a>
-        <a href="events.html">Events</a>
-        <a href="kontaktos.html">Kontakt</a>
-      </div>
-      <p>© Copyright 2020, MUX</p>
-      <p class="designet-af-class">Designet & udviklet af</p>
-      <div class="card gem-popup">
-        <div class="text">
-          <div class="title">
-            Designet & udviklet af:
-            <div class="tooltip">
-              <div class="tooltip-spacing">
-                <div class="tooltip-bg1"></div>
-                <div class="tooltip-bg2"></div>
-                <div class="tooltip-text">?</div>
-              </div>
-            </div>
-            <svg
-              class="popup-bg"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 300 130"
-              height="130"
-              width="300"
-            >
-              <path
-                d="M36.5 12.695c15.9-2.4 32.556-4.284 82.977-3.815 79.67.74 121.785.26 145.294 5.51 18.483 4.13 34.333 11.696 33.382 32.11l-1.696 36.39c-1.01 21.68-11.678 29.377-21.934 30.838-14.884 2.12-29.72 3.52-54.512-.848C232.522 118.263 233.5 129 233.5 129s-1.992-7.686-32.218-14c-17.933-5.043-118.204 3.687-163.51-2.544-21.317-2.932-33.706-8.26-34.228-27.022L2.272 39.717c-.46-16.58 12.34-23.718 34.23-27.022z"
-                fill="#303030"
-                stroke="#000"
-              />
-            </svg>
-            <svg
-              class="popup-outline"
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 300 130"
-              height="130"
-              width="300"
-            >
-              <g stroke-width="2" stroke-linecap="round">
-                <path
-                  class="popup-outline-left"
-                  d="M233.5 129s-1.992-7.686-32.218-14c-17.933-5.043-118.204 3.687-163.51-2.544-21.317-2.932-33.706-8.26-34.228-27.022L2.272 39.717c-.46-16.58 12.34-23.718 34.23-27.022 15.897-2.4 32.554-4.284 82.975-3.815"
-                  fill="none"
-                  stroke="#303030"
-                />
-                <path
-                  class="popup-outline-right"
-                  d="M119.477 8.88c79.67.74 121.785.26 145.294 5.51 18.483 4.13 34.333 11.696 33.382 32.11l-1.696 36.39c-1.01 21.68-11.678 29.377-21.934 30.838-14.884 2.12-29.72 3.52-54.512-.848C232.522 118.263 233.5 129 233.5 129"
-                  fill="none"
-                  stroke="#303030"
-                />
-              </g>
-            </svg>
-            <div class="popup-text">
-              Siden er lavet som et 2. semester eksamens prokekt. <br />
-              Klik på et navn for at se deres respektive portfolie!
-            </div>
-          </div>
-          <div class="info">
-            <div>
-              Udviklet af: <br />
-              <a
-                href="https://www.linkedin.com/in/mathias-quist-michaelsen-329590125"
-                >Mathias Quist Michaelsen</a
-              >
-              <p>Mail: mathiasqm@gmail.com</p>
-              <br />
-              <a href="http://maltekrog.dk">Malte Krog </a>
-              <p>Mail: malte.krog@gmail.com</p>
-            </div>
 
-            <div>
-              Design & Content af: <br />
-              <a href="http://mikkeljansen.dk">Mikkel Werner Jansen</a>
-              <p>Mail: mikkeljansen@yahoo.dk</p>
-              <br />
-              <a href="https://www.linkedin.com/in/frederik-schmidt-1a3748179"
-                >Frederik schmidt</a
-              >
-              <p>Mail: Frederikschmidt19@gmail.com</p>
-            </div>
+          <div class="some-container">
+            <a href="https://www.facebook.com/MUX8000/"><img class="some-img" src="media/Images/f_logo_RGB-Black_58.png" alt="Facebook logo"/></a>
+            <a href="https://www.instagram.com/mux8000/"><img class="some-img" src="media/Images/glyph-logo_May2016.png" alt="Instagram logo"/></a>
           </div>
-        </div>
-        <div class="buttons">
-          <div class="button-primary">Okay</div>
+
         </div>
       </div>
-    </footer>
-    <script type="text/javascript" src="JS/events.js"></script>
-  </body>
+    </nav>
+  </header>
+  <!-- Kommende Events sektion -->
+  <main class="event-sektion">
+  <h1 class="event-titel-event">Kommende</h1>
+    <h1 class="event-titel">Events</h1>
+    <div class="event-container">
+      <!-- Card one -->
+      <div class="card-container">
+        <div class="event-card">
+          <h2 class="card-title">SPOT</h2>
+          <p class="event-card-body">06/05/2022</p>
+          <button class="card-btn" type="button" onclick="document.location='kunstruktion.html'">Køb billet</button>
+        </div>
+      </div>
+      <!-- Card two -->
+      <div class="card-container">
+        <div class="event-card">
+          <h2 class="card-title">Scandic</h2>
+          <p class="event-card-body">26/03/2022</p>
+          <button class="card-btn" type="button" onclick="document.location='kunstruktion.html'">Køb billet</button>
+        </div>
+      </div>
+      <!-- Card Three -->
+      <div class="card-container">
+        <div class="event-card">
+          <h2 class="card-title">Ridehuset</h2>
+          <p class="event-card-body">14/08/2022</p>
+          <button class="card-btn" type="button" onclick="document.location='kunstruktion.html'">Køb billet</button>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- seneste events sektion -->
+  <section class="event-sektion-seneste">
+    <h1 class="event-titel">Seneste</h1>
+    <h1 class="event-titel-event">Events</h1>
+
+    <!-- Card one -->
+    <div class="event-container">
+      <div class="card-container">
+        <div class="event-card">
+          <h2 class="card-title">SPOT</h2>
+          <p class="event-card-body">06/05/2022</p>
+          <button class="card-btn" type="button" onclick="document.location='konstruktion.html'">Se Event</button>
+        </div>
+      </div>
+      
+      <!-- Card two -->
+      <div class="card-container">
+        <div class="event-card">
+          <h2 class="card-title">Scandic</h2>
+          <p class="event-card-body">26/03/2022</p>
+          <button class="card-btn" type="button" onclick="document.location='konstruktion.html'">Se Event</button>
+        </div>
+      </div>
+      
+      <!-- Card Three -->
+      <div class="card-container">
+        <div class="event-card">
+          <h2 class="card-title">Ridehuset</h2>
+          <p class="event-card-body">14/08/2022</p>
+          <button class="card-btn" type="button" onclick="document.location='konstruktion.html'">Se Event</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--Begyndelse på footer-->
+  <footer class="footer">
+    <!-- Logo animation -->
+    <a href="index.html"><video class="footer-img" src="Media/Videos/thisoneforreal.mp4" autoplay loop muted></video></a>
+
+    <div class="some-container">
+      <a href="https://www.facebook.com/MUX8000/"><img style="filter: invert(0); margin-right: 40px;" class="some-img" src="media/Images/f_logo_RGB-Black_58.png" alt="Facebook logo"/></a>
+
+      <a href="https://www.instagram.com/mux8000/"><img style="filter: invert(0);" class="some-img" src="media/Images/glyph-logo_May2016.png" alt="Instagram logo"/></a>
+    </div>
+
+    <p>CVR-nr: 39626721 | Vester Allé 15, 8000 Aarhus C</p>
+
+    <!-- Footer Navigation -->
+    <div class="footer-nav">
+      <a href="index.html">Hjem</a>
+      <a href="ommux.html">Om Mux</a>
+      <a href="galleri.html">Galleri</a>
+      <a href="events.html">Events</a>
+      <a href="kontaktos.html">Kontakt</a>
+    </div>
+
+    <p>© Copyright 2020, MUX</p>
+
+    <!-- Designet af pop-up begyndelse -->
+    <p class="designet-af-class">Designet & udviklet af Fresch Media</p>
+    <div class="card gem-popup">
+      <div class="text">
+
+        <div class="title">
+          <h4>Designet & udviklet af: <a href="www.freschmedia.dk">Fresch Media</a></h4>
+        </div>
+        
+        <div class="info">
+
+          <div>
+            Udviklet af:<br>
+            <a href="https://www.linkedin.com/in/mathias-quist-michaelsen-329590125">Mathias Quist Michaelsen</a>
+            <p>Mail: mathiasqm@gmail.com</p>
+            <br>
+            <a href="http://maltekrog.dk">Malte Krog </a>
+            <p>Mail: malte.krog@gmail.com</p>
+          </div>
+
+          <div>
+            Design & Content af: <br />
+            <a href="http://mikkeljansen.dk">Mikkel Werner Jansen</a>
+            <p>Mail: mikkeljansen@yahoo.dk</p>
+            <br>
+            <a href="https://www.linkedin.com/in/frederik-schmidt-1a3748179">Frederik Schmidt</a>
+            <p>Mail: Frederikschmidt19@gmail.com</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="buttons">
+        <div class="button-primary">Okay</div>
+      </div>
+      
+    </div>
+  </footer>
+  <script src="JS/events.js"></script>
+</body>
 </html>
