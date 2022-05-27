@@ -432,10 +432,6 @@ header {
     display: block;
   }
 
-  .frivillig-btn {
-    right: 10%;
-  }
-
   .card {
     width: 65%;
   }
@@ -446,9 +442,6 @@ header {
 }
 
 @media only screen and (min-width: 1200px) {
-  .frivillig-btn {
-    right: 7%;
-  }
 
   .card-container:nth-child(3) {
     margin-left: 50px;
