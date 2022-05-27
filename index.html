@@ -31,20 +31,21 @@
           <span class="span"></span>
         </label>
         <div class="grey-box"></div>
-        <ul class="menu-box">
-          <li><a class="menu-item" href="index.html">HJEM</a></li>
-          <li><a class="menu-item" href="ommux.html">OM MUX</a></li>
-          <li><a class="menu-item" href="galleri.html">GALLERI</a></li>
-          <li><a class="menu-item" href="events.html">EVENTS</a></li>
-          <li><a class="menu-item" href="kontaktos.html">KONTAKT OS</a></li>
-
+        <div class="menu-box">
+          <ul>
+            <li><a class="menu-item" href="index.html">HJEM</a></li>
+            <li><a class="menu-item" href="ommux.html">OM MUX</a></li>
+            <li><a class="menu-item" href="galleri.html">GALLERI</a></li>
+            <li><a class="menu-item" href="events.html">EVENTS</a></li>
+            <li><a class="menu-item" href="kontaktos.html">KONTAKT OS</a></li>
+          </ul>
           <div class="some-container">
             <a href="https://www.facebook.com/MUX8000/"><img class="some-img" src="Media/Images/f_logo_RGB-Black_58.png"
                 alt="Facebook logo" /></a>
             <a href="https://www.instagram.com/mux8000/"><img class="some-img" src="Media/Images/glyph-logo_May2016.png"
                 alt="Instagram logo" /></a>
           </div>
-        </ul>
+        </div>
       </div>
     </nav>
     <div class="aftermovie">
@@ -53,7 +54,7 @@
     <div class="svg-container">
       <div class="slide-down">
         <svg class="titleone animation" viewbox="0 0 150 18">
-          <text x="10" y="15" text-anchor="left" font-size="1" fill="none" stroke-width=".315" stroke="#fff"
+          <text x="10" y="15" text-anchor="start" font-size="1" fill="none" stroke-width=".315" stroke="#fff"
             font-family="'Prompt'">
             HEAR IT,
           </text>
@@ -62,7 +63,7 @@
 
       <div class="slide-down">
         <svg class="titletwo animation" viewbox="0 0 150 18">
-          <text x="10" y="15" text-anchor="left" font-size="1" fill="none" stroke-width=".315" stroke="#fff"
+          <text x="10" y="15" text-anchor="start" font-size="1" fill="none" stroke-width=".315" stroke="#fff"
             font-family="'Prompt'">
             FEEL IT,
           </text>
@@ -71,7 +72,7 @@
 
       <div class="titlethree slide-down animation">
         <svg viewbox="0 0 150 18">
-          <text x="10" y="15" text-anchor="left" font-size="1" fill="none" stroke-width=".315" stroke="#fff"
+          <text x="10" y="15" text-anchor="start" font-size="1" fill="none" stroke-width=".315" stroke="#fff"
             font-family="'Prompt'">
             LIVE IT!
           </text>
@@ -130,7 +131,7 @@
     <div class="galleri-titel">
       <h2 class="animation">DIN KONCERTOPLEVELSE</h2>
       <svg class="animation" viewbox="0 0 300 18">
-        <text x="90" y="15" text-anchor="left" fill="none" stroke-width=".315" stroke="#fff" font-family="'Prompt'">
+        <text x="90" y="15" text-anchor="start" fill="none" stroke-width=".315" stroke="#fff" font-family="'Prompt'">
           GENOPFUNDET
         </text>
       </svg>
@@ -139,7 +140,7 @@
       </div>
     </div>
 
-    <div id="lower-img">
+    <div class="lower-img">
       <div class="img imgone floatup-one hover-this"></div>
       <div class="img imgtwo floatup-three hover-this"></div>
     </div>
@@ -147,7 +148,7 @@
       <div class="img imgthree floatup-two hover-this"></div>
       <div class="img imgfour floatup-four hover-this"></div>
     </div>
-    <div id="lower-img">
+    <div class="lower-img">
       <div class="img imgfive floatup-one hover-this"></div>
       <div class="img imgsix floatup-three hover-this"></div>
     </div>
@@ -155,7 +156,7 @@
       <div class="img imgseven floatup-two hover-this"></div>
       <div class="img imgeight floatup-four hover-this"></div>
     </div>
-    <div id="lower-img">
+    <div class="lower-img">
       <div class="img imgnine floatup-one hover-this"></div>
       <div class="img imgten floatup-three hover-this"></div>
     </div>
@@ -163,7 +164,7 @@
       <div class="img imgeleven floatup-two hover-this"></div>
       <div class="img imgtvelve floatup-four hover-this"></div>
     </div>
-    <div id="lower-img">
+    <div class="lower-img">
       <div class="img imgthirteen floatup-one hover-this"></div>
       <div class="img imgfourteen floatup-three hover-this"></div>
     </div>
@@ -178,21 +179,21 @@
         <div class="event-card">
           <h2 class="card-title">SPOT</h2>
           <p class="event-card-body">06/05/2022</p>
-          <a href="events.html"><button class="card-btn" type="button">Se Event</button></a>
+          <button class="card-btn" type="button" onclick="document.location='events.html'">Se Event</button>
         </div>
       </div>
       <div class="card-container">
         <div class="event-card">
           <h2 class="card-title">Scandic</h2>
           <p class="event-card-body">26/03/2022</p>
-          <a href="events.html"><button class="card-btn" type="button">Se Event</button></a>
+          <button class="card-btn" type="button" onclick="document.location='events.html'">Se Event</button>
         </div>
       </div>
       <div class="card-container">
         <div class="event-card">
           <h2 class="card-title">Ridehuset</h2>
           <p class="event-card-body">14/08/2022</p>
-          <a href="events.html"><button class="card-btn" type="button">Se Event</button></a>
+          <button class="card-btn" type="button" onclick="document.location='events.html'">Se Event</button>
         </div>
       </div>
     </div>
@@ -304,7 +305,7 @@
       </div>
     </div>
   </footer>
-  <script type="text/javascript" src="JS/script.js"></script>
+  <script src="JS/script.js"></script>
 </body>
 
 </html>
