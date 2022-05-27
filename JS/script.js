@@ -26,7 +26,7 @@ const observer2 = new IntersectionObserver(entries => {
     })
 }, {
     threshold: 0.0,
-    rootMargin: "170px"
+    rootMargin: "170px" 
 })
 
 floatup.forEach(floatup => {

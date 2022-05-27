@@ -151,13 +151,6 @@ body {
   }
 
 /* Styling af første sektion */
-.aftermovie {
-  position: absolute;
-  top: 100px;
-  right: 5%;
-  width: 40%;
-  display: none;
-}
 
 .svg-container {
   position: absolute;
@@ -196,7 +189,7 @@ body {
   top: 0;
   left: 0;
   z-index: -10;
-  height: 130vh;
+  height: 200vh;
   width: auto;
 }
 
@@ -235,6 +228,10 @@ body {
   border-radius: 20px;
   position: relative;
   margin: 50px;
+}
+
+.move-img {
+  margin-top: 100px;
 }
 
 /* Indsætter billeder */
