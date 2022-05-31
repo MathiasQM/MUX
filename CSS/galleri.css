@@ -615,7 +615,6 @@ body {
   }
 }
 
-
 @media only screen and (min-width: 800px) {
   .menu-box {
     width: 60%;
@@ -656,9 +655,7 @@ body {
     display: block;
   }
 
-  .findtickets-btn {
-    right: 7%;
-  }
+
 
   .gradient-background {
     width: 100vw;
