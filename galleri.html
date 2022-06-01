@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Vi genopfinder din koncertoplevelse og giver dig en oplevelse for livet!">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="CSS/reset.css">
@@ -14,43 +15,49 @@
       rel="stylesheet"
     />
     <link rel="icon" href="Media/Images/Mux-tabicon.png">
+    <link rel="apple-touch-icon" href="Media/Images/Mux-tabicon.png">
+    
     <title>MUX | Galleri</title>
   </head>
   <body>
-    <!-- Navigation -->
-    <nav>
-      <!-- Begyndelse på burger menu -->
-      <div class="hamburger-menu">
-        <input id="menu-toggle" type="checkbox" />
-        <label class="menu-btn" for="menu-toggle">
-          <span class="span"></span>
-        </label>
-        <div class="grey-box"></div>
-
-        <div class="menu-box">
-          <ul>
-            <li><a class="menu-item" href="index.html">HJEM</a></li>
-            <li><a class="menu-item" href="ommux.html">OM MUX</a></li>
-            <li><a class="menu-item" href="galleri.html">GALLERI</a></li>
-            <li><a class="menu-item" href="events.html">EVENTS</a></li>
-            <li><a class="menu-item" href="kontaktos.html">KONTAKT OS</a></li>
-          </ul>
-
-          <div class="some-container">
-            <a href="https://www.facebook.com/MUX8000/"><img class="some-img" src="media/Images/f_logo_RGB-Black_58.png" alt="Facebook logo"/></a>
-            <a href="https://www.instagram.com/mux8000/"><img class="some-img" src="media/Images/glyph-logo_May2016.png" alt="Instagram logo"/></a>
+    <header>
+      <a href="index.html">
+        <img id="mux-logo" src="Media/Images/Mux-logo-alpha.png" alt="Mux logo uden baggrund" />
+      </a>
+      <nav>
+        <!-- Begyndelse på burger menu -->
+        <div class="hamburger-menu">
+          <input id="menu-toggle" type="checkbox" />
+          <label class="menu-btn" for="menu-toggle">
+            <span class="span"></span>
+          </label>
+          <div class="grey-box"></div>
+  
+          <div class="menu-box">
+            <ul>
+              <li><a class="menu-item" href="index.html">HJEM</a></li>
+              <li><a class="menu-item" href="ommux.html">OM MUX</a></li>
+              <li><a class="menu-item" href="galleri.html">GALLERI</a></li>
+              <li><a class="menu-item" href="events.html">EVENTS</a></li>
+              <li><a class="menu-item" href="kontaktos.html">KONTAKT OS</a></li>
+            </ul>
+  
+            <div class="some-container">
+              <a href="https://www.facebook.com/MUX8000/"><img class="some-img" src="Media/Images/f_logo_RGB-Black_58.png" alt="Facebook logo"/></a>
+              <a href="https://www.instagram.com/mux8000/"><img class="some-img" src="Media/Images/glyph-logo_May2016.png" alt="Instagram logo"/></a>
+            </div>
+  
           </div>
-
         </div>
-      </div>
-    </nav>
-
+      </nav>
+    </header>
+  
   <!-- galleri overskrift -->
     <div class="galleri">
-        <video style="overflow: hidden" src="Media/Videos/Comp1.mp4" autoplay muted loop></video>
+        <video style="overflow: hidden" src="Media/Videos/Comp1.mp4" playsinline autoplay muted loop></video>
 
     <div class="galleri-titel">
-      <h2 class="animation">DIN KONCERTOPLEVELSE</h2>
+      <h1 class="animation">DIN KONCERTOPLEVELSE</h1>
 
       <svg class="animation" viewbox="0 0 300 18">
           <text x="90" y="15" text-anchor="start" fill="none" stroke-width=".315" stroke="#fff" font-family="'Prompt'">GENOPFUNDET</text>
@@ -129,7 +136,7 @@
     </div>
 
     <!-- Tredje Kolonne -->
-    <div class="test">
+    <div class="move-img">
         <div class="lower-img">
           <div class="img imgtwonine floatup-one hover-this"></div>
           <div class="img imgthreezero floatup-three hover-this"></div>
@@ -161,7 +168,7 @@
     </div>
 
     <!-- Fjerde kollone -->
-    <div class="test2">
+    <div>
       <div class="lower-img">
         <div class="img imgfourthree floatup-one hover-this"></div>
         <div class="img imgfourfour floatup-three hover-this"></div>
@@ -193,7 +200,7 @@
     </div>
 
     <!-- Femte kolonne -->
-    <div class="test">
+    <div class="move-img">
       <div class="lower-img">
         <div class="img imgfiveseven floatup-one hover-this"></div>
         <div class="img imgfiveeight floatup-three hover-this"></div>
