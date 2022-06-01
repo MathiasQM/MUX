@@ -207,7 +207,6 @@ header {
   background-image: url(../Media/Images/galleri/Spot-festival-31.jpg);
 }
 
-
 .animation {
   opacity: 1;
   transform: translateY(100px);
@@ -291,27 +290,27 @@ header {
 }
 
 .card-img-one {
-  background-image: url(../Media/Images/galleri/Medarbejdere/Gertrud.jpg);
+  background-image: url(../Media/Images/galleri/Medarbejdere/Gertrud.webp);
 }
 
 .card-img-two {
-  background-image: url(../Media/Images/galleri/Medarbejdere/James.jpg);
+  background-image: url(../Media/Images/galleri/Medarbejdere/James.webp);
 }
 
 .card-img-three {
-  background-image: url(../Media/Images/galleri/Medarbejdere/Lucas.jpg);
+  background-image: url(../Media/Images/galleri/Medarbejdere/Lucas.webp);
 }
 
 .card-img-four {
-  background-image: url(../Media/Images/galleri/Medarbejdere/Mark.jpg);
+  background-image: url(../Media/Images/galleri/Medarbejdere/Mark.webp);
 }
 
 .card-img-five {
-  background-image: url(../Media/Images/galleri/Medarbejdere/Mia.jpg);
+  background-image: url(../Media/Images/galleri/Medarbejdere/Mia.webp);
 }
 
 .card-img-six {
-  background-image: url(../Media/Images/galleri/Medarbejdere/Sidsel.jpg);
+  background-image: url(../Media/Images/galleri/Medarbejdere/Sidsel.webp);
 }
 
 .oplysninger {

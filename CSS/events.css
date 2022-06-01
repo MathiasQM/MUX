@@ -219,7 +219,7 @@ header {
   min-width: 400px;
   max-width: 400px;
   color: #fff;
-  background-image: url(../Media/Images/SpotXMux.jpg);
+  background-image: url(../Media/Images/SpotXMux.webp);
   background-size: contain;
   background-repeat: no-repeat;
   padding: 12.5rem 0 0;
@@ -228,11 +228,11 @@ header {
 }
 
 .card-container:nth-child(2) {
-  background-image: url(../Media/Images/ScandicXMux.jpg);
+  background-image: url(../Media/Images/ScandicXMux.webp);
 }
 
 .card-container:nth-child(3) {
-  background-image: url(../Media/Images/RidehusetXMux.jpg);
+  background-image: url(../Media/Images/RidehusetXMux.webp);
 }
 
 .card-btn {
