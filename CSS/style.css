@@ -444,6 +444,11 @@ h3 {
   flex-direction: column;
 }
 
+<<<<<<< Updated upstream
+=======
+/* Video Baggrund */
+
+>>>>>>> Stashed changes
 .galleri>video {
   position: absolute;
   z-index: -10;
