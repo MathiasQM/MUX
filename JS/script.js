@@ -73,9 +73,10 @@ const okay = document.querySelector('.button-primary').addEventListener('click',
 
 // Invert logo to make it visible in each sektion
 
- var distFromTop = document.querySelector(".om-mux").offsetTop;
- var distFromTop2 = document.querySelector(".galleri").offsetTop;
- var distFromTop3 = document.querySelector(".event-sektion").offsetTop;
+ var distFromTop = document.querySelector(".featured-project").offsetTop;
+ var distFromTop2 = document.querySelector(".work").offsetTop;
+ var distFromTop3 = document.querySelector(".approach-section").offsetTop;
+ var distFromTop4 = document.querySelector(".contact-text-area").offsetTop;
 
  window.addEventListener("scroll", function() {
      var scroll = this.scrollY;
