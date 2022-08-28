@@ -2,12 +2,15 @@
 body,
 html {
   font-size: 1rem;
-  font-family: 'Prompt', 'Roboto';
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 400;
+  font-style: normal;
   line-height: 1.3;
 }
 
 body {
   overflow-x: hidden;
+  background-color: #f8faea;
 }
 
 header {
@@ -216,6 +219,7 @@ header {
   padding: 20px 0;
   line-height: 1.7;
   height: 280px;
+  color: #1d00ff;
 }
 
 .om-line {
@@ -236,7 +240,7 @@ header {
   text-transform: uppercase;
   line-height: 100px;
   text-align: center;
-  color: #000;
+  color: #1d00ff;
 }
 
 /* Smarbejdspartnere */
@@ -249,6 +253,7 @@ header {
   text-transform: uppercase;
   position: relative;
   font-weight: bold;
+  color: #1d00ff;
 }
 
 @keyframes scroll {
@@ -262,8 +267,7 @@ header {
 }
 
 .slider {
-  background: rgb(43, 43, 43);
-  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+  background: #1a2537;
   height: 100px;
   margin: auto;
   overflow: hidden;
@@ -274,7 +278,6 @@ header {
 
 .slider::before,
 .slider::after {
-  background: linear-gradient(to right, rgb(33, 33, 33) 0%, rgba(255, 255, 255, 0) 100%);
   content: "";
   height: 100px;
   position: absolute;
@@ -345,7 +348,7 @@ header {
   align-items: center;
   height: 300px;
   padding-top: 20px;
-  background-color: #fff;
+  background-color: #f8faea;
 }
 
 .footer-img {
@@ -432,7 +435,9 @@ header {
   font-weight: bold;
   margin: 10px;
   position: relative;
-  font-family: 'Prompt';
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 .info {

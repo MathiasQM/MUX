@@ -2,7 +2,9 @@
 body,
 html {
   font-size: 1rem;
-  font-family: 'Prompt', 'Roboto';
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 400;
+  font-style: normal;
   line-height: 1.3;
 }
 
@@ -167,14 +169,14 @@ header {
   position: relative;
   padding: 20px 0;
   overflow-x: hidden;
-  background-color: #cc573b;
+  background-color: #1a2537;
 }
 
 .event-sektion-seneste {
   position: relative;
   padding: 20px 0;
   overflow-x: hidden;
-  background-color: #cc573b;
+  background-color: #1a2537;
 }
 
 .event-container {
@@ -195,6 +197,7 @@ header {
   text-transform: uppercase;
   position: relative;
   font-weight: bold;
+  color: #f8faea;
 }
 
 .event-titel-event {
@@ -208,6 +211,7 @@ header {
   text-transform: uppercase;
   position: relative;
   font-weight: bold;
+  color: #f8faea;
 }
 
 .event-card {
@@ -280,7 +284,7 @@ header {
   align-items: center;
   height: 300px;
   padding-top: 20px;
-  background-color: #fff;
+  background-color: #f8faea;
 }
 
 .footer-img {
@@ -367,7 +371,9 @@ header {
   font-weight: bold;
   margin: 10px;
   position: relative;
-  font-family: 'Prompt';
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 .info {
