@@ -1,17 +1,3 @@
-const animation = document.querySelectorAll('.animation') 
-
-const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-        entry.target.classList.toggle("show", entry.isIntersecting)
-    })
-}, {
-    threshold: 0.8,
-})
-
-animation.forEach(animation => {
-    observer.observe(animation)
-})
-
 
 var distFromTop5 = document.querySelector(".card-container").offsetTop - 150;
 

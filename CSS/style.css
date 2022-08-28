@@ -24,6 +24,8 @@ header {
   left: 0;
 }
 
+/* Her begynder nav*/
+
 #mux-logo {
   position: fixed;
   width: 50px;
@@ -55,7 +57,7 @@ header {
   transform: rotate(90deg);
 }
 
-#menu-toggle:checked~.menu-box {
+#menu-toggle:checked ~ .menu-box {
   right: 0;
   opacity: 1;
 }
@@ -103,7 +105,7 @@ header {
   top: 8px;
 }
 
-/* Bruger menu baggrund */
+/* Burger menu baggrund */
 .menu-box {
   opacity: 0;
   display: block;
@@ -148,11 +150,6 @@ header {
   color: #eef0f6;
   font-weight: bold;
   text-transform: uppercase;
-}
-
-.fill:hover {
-  color: #fff;
-  border: 3px solid #fff;
 }
 
 .fill:before {
@@ -223,7 +220,6 @@ header {
   animation-name: slidedown;
   animation-duration: .5s;
   animation-iteration-count: 1;
-  animation-fill-mode: both;
   animation-timing-function: linear;
   overflow: hidden;
   max-width: 100vw;
@@ -328,7 +324,7 @@ header {
   margin-bottom: 30px;
 }
 
-.om-mux>div {
+.om-mux > div {
   width: 375px;
 }
 
@@ -395,14 +391,14 @@ h3 {
   overflow: hidden;
 }
 
-.galleri>div {
+.galleri > div {
   display: flex;
   flex-direction: column;
 }
 
  /* Video Baggrund */
 
-.galleri>video {
+.galleri > video {
   position: absolute;
   z-index: -10;
   width: 400vw;
@@ -672,7 +668,7 @@ h3 {
   font-weight: bold;
 }
 
-/* Smarbejdspartnere */
+/* Samarbejdspartnere */
 
 @keyframes scroll {
   0% {
@@ -730,7 +726,7 @@ h3 {
   align-items: center;
 }
 
-.slide>img {
+.slide > img {
   width: 20%;
   height: auto;
 }
