@@ -108,7 +108,7 @@ header {
   margin: 0;
   padding: 40px 0;
   list-style: none;
-  background-image: linear-gradient(to right, #b613a0, #d41a02);
+  background: #f8faea;
   box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
   transition-duration: .25s;
   z-index: 100;
@@ -121,7 +121,7 @@ header {
   text-align: center;
   text-transform: uppercase;
   padding: 12px 24px;
-  color: #fff;
+  color: #1d00ff;
   font-size: 3rem;
   font-weight: 600;
   text-decoration: none;
@@ -129,7 +129,8 @@ header {
 }
 
 .menu-item:hover {
-  background-color: rgb(221, 83, 48);
+  background-color: #1a2537;
+  color: #f8faea;
 }
 
 .grey-box {
@@ -242,8 +243,8 @@ header {
 .card-btn {
   position: relative;
   left: 25%;
-  color: #fff;
-  background: #0a0a0a;
+  color: #f8faea;
+  background: #1a2537;
   font-weight: 700;
   text-align: center;
   text-decoration: none;
@@ -255,13 +256,14 @@ header {
   height: 50px;
   width: 200px;
   transform: skew(-21deg);
+  border: 3px solid #f8faea;
 }
 
 .card-btn:hover {
-  color: #0a0a0a;
-  background: #fff;
-  border: 3px solid #0a0a0a;
-  outline: 1px solid #0a0a0a;
+  color: #1a2537;
+  background: #f8faea;
+  border: 3px solid #1d00ff;
+  outline: 1px solid #1d00ff;
 }
 
 .card-title {
@@ -278,18 +280,41 @@ header {
 /* Footer styiling */
 
 .footer {
-  width: 100vw;
+  max-width: 100vw;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  height: 300px;
+  align-items: flex-start;
+  height: 150px;
   padding-top: 20px;
+  padding-bottom: 20px;
   background-color: #f8faea;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.footer > div > h1{
+  font-size: 2rem;
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.footer > div > h2 {
+font-family: freight-display-pro, serif;
+font-weight: 400;
+font-style: normal;
+font-size: 2rem;
+display: none;
 }
 
 .footer-img {
   width: 100%;
   max-width: 150px;
+}
+
+footer img {
+  display: none;
+  justify-content: flex-end;
 }
 
 .footer-nav a {

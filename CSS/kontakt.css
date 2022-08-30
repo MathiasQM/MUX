@@ -54,7 +54,7 @@ header {
   transform: rotate(90deg);
 }
 
-#menu-toggle:checked~.menu-box {
+#menu-toggle:checked ~ .menu-box {
   right: 0;
   opacity: 1;
 }
@@ -114,7 +114,7 @@ header {
   margin: 0;
   padding: 40px 0;
   list-style: none;
-  background-image: linear-gradient(to right, #b613a0, #d41a02);
+  background: #f8faea;
   box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
   transition-duration: .25s;
   z-index: 100;
@@ -127,7 +127,7 @@ header {
   text-align: center;
   text-transform: uppercase;
   padding: 12px 24px;
-  color: #fff;
+  color: #1d00ff;
   font-size: 3rem;
   font-weight: 600;
   text-decoration: none;
@@ -141,23 +141,24 @@ header {
   z-index: 100;
   top: 20px;
   right: 15%;
-  border: 3px solid #eef0f6;
+  border: 3px solid #f8faea;
   padding: 5px 6px;
   text-decoration: none;
-  color: #eef0f6;
+  color: #f8faea;
   font-weight: bold;
   text-transform: uppercase;
 }
 
+
 .fill:hover {
-  color: #fff;
-  border: 3px solid #fff;
+  color: #1d00ff;
+  border: 3px solid #1d00ff;
 }
 
 .fill:before {
   content: "";
   position: absolute;
-  background: rgb(112, 112, 112);
+  background: #f8faea;
   bottom: 0;
   left: 0;
   right: 0;
@@ -171,7 +172,34 @@ header {
 }
 
 .menu-item:hover {
-  background-color: rgb(221, 83, 48);
+  background-color: #1a2537;
+  color: #f8faea;
+}
+
+
+.grey-box {
+  position: fixed;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  display: none;
+  overflow: visible;
+  background-color: #262626;
+  opacity: 0.35;
+  z-index: 100;
+}
+
+.some-container {
+  margin: 5% 5% 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.some-img {
+  width: 45px;
+  height: 45px;
+  filter: invert(100%);
 }
 
 .grey-box {
@@ -339,18 +367,41 @@ header {
 /* Footer styiling */
 
 .footer {
-  width: 100vw;
+  max-width: 100vw;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  height: 300px;
-  padding-top: 150px;
+  align-items: flex-start;
+  height: 150px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   background-color: #f8faea;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.footer > div > h1{
+  font-size: 2rem;
+  font-family: neue-haas-grotesk-display, sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.footer > div > h2 {
+font-family: freight-display-pro, serif;
+font-weight: 400;
+font-style: normal;
+font-size: 2rem;
+display: none;
 }
 
 .footer-img {
   width: 100%;
   max-width: 150px;
+}
+
+footer img {
+  display: none;
+  justify-content: flex-end;
 }
 
 .footer-nav a {
